@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Gloria+Hallelujah&family=PT+Sans+Caption:wght@400;700&display=swap');
+</style>
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #000022;
+    font-family: 'Pt Sans Caption', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gloria Hallelujah', sans-serif;
+}
