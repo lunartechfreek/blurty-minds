@@ -17,8 +17,20 @@ body {
     /* Generic project styles */
     color: #000022;
     font-family: 'Pt Sans Caption', sans-serif;
+    background-image: linear-gradient(to bottom, #007193, #0182a7, #0294ba, #02a6ce, 
+    #01b9e2, #00c5eb, #00d1f3, #00ddfa, #00e5f6, #0eedf0, #32f4e8, #4ffbdf);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Gloria Hallelujah', sans-serif;
+    text-align: center;
+}
+
+#game-box {
+    width: 85%;
+    height: 70vh;
+    max-height: 500px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #FCFBFF;
 }
