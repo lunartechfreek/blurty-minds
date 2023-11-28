@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 welcomeBox.classList.add('hide');
                 questionBox.classList.remove('hide');
                 scoreBox.classList.remove('hide');
+                runGame();
             }
         });
     }
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function runGame() {
-
+    
 }
 
 function nextQuestion() {
