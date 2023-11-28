@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 welcomeBox.classList.add('hide');
                 questionBox.classList.remove('hide');
                 scoreBox.classList.remove('hide');
+                howToBox.classList.add('hide');
                 runGame();
             }
         });
