@@ -1,3 +1,6 @@
+// Wait for the dom to finish loading before running the game
+//Get the intro button elements and add event listeners to them
+//Set intro buttons to hide and display relevent sections
 document.addEventListener("DOMContentLoaded", function() {
     let introButtons = document.getElementsByClassName('intro-btn');
     let welcomeBox = document.getElementsByClassName('welcome')[0];
