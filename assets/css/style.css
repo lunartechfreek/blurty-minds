@@ -91,9 +91,9 @@ h1 {
 }
 
 #game-image {
-    height: 250px;
+    height: 192px;
     background-color: bisque;
-    width: 250px;
+    width: 288px;
 }
 
 .question-box > p {
