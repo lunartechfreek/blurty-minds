@@ -3,10 +3,6 @@
 //Set intro buttons to hide and display relevent sections
 document.addEventListener("DOMContentLoaded", function() {
     let introButtons = document.getElementsByClassName('intro-btn');
-    let welcomeBox = document.getElementsByClassName('welcome')[0];
-    let howToBox = document.getElementsByClassName('how-to')[0];
-    let questionBox = document.getElementsByClassName('question-box')[0];
-    let scoreBox = document.getElementsByClassName('score-area')[0];
 
     for (let introbutton of introButtons) {
         introbutton.addEventListener('click', function () {
@@ -14,20 +10,22 @@ document.addEventListener("DOMContentLoaded", function() {
                 welcomeBox.classList.add('hide');
                 howToBox.classList.remove('hide');
             } else {
-                welcomeBox.classList.add('hide');
-                questionBox.classList.remove('hide');
-                scoreBox.classList.remove('hide');
-                howToBox.classList.add('hide');
                 runGame();
             }
         });
     }
 });
 
-
+let welcomeBox = document.getElementsByClassName('welcome')[0];
+let howToBox = document.getElementsByClassName('how-to')[0];
+let questionBox = document.getElementsByClassName('question-box')[0];
+let scoreBox = document.getElementsByClassName('score-area')[0];
 
 function runGame() {
-    
+    welcomeBox.classList.add('hide');
+    questionBox.classList.remove('hide');
+    scoreBox.classList.remove('hide');
+    howToBox.classList.add('hide');
 }
 
 function nextQuestion() {
