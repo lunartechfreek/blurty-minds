@@ -21,11 +21,16 @@ let howToBox = document.getElementsByClassName('how-to')[0];
 let questionBox = document.getElementsByClassName('question-box')[0];
 let scoreBox = document.getElementsByClassName('score-area')[0];
 
+let shuffledQuestions, shuffledQuestionIndex;
+
 function runGame() {
     welcomeBox.classList.add('hide');
     questionBox.classList.remove('hide');
     scoreBox.classList.remove('hide');
     howToBox.classList.add('hide');
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    shuffledQuestionIndex = 0;
+    nextQuestion ();
 }
 
 function nextQuestion() {
