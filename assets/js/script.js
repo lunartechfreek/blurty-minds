@@ -20,6 +20,9 @@ let welcomeBox = document.getElementsByClassName('welcome')[0];
 let howToBox = document.getElementsByClassName('how-to')[0];
 let questionBox = document.getElementsByClassName('question-box')[0];
 let scoreBox = document.getElementsByClassName('score-area')[0];
+let questionImage = document.getElementById('game-image');
+
+let answerButtons = document.getElementsByClassName('answer-btn');
 
 let shuffledQuestions, shuffledQuestionIndex;
 
@@ -30,11 +33,27 @@ function runGame() {
     howToBox.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     shuffledQuestionIndex = 0;
-    nextQuestion ();
+    nextQuestion();
 }
 
 function nextQuestion() {
+    showQuestion(shuffledQuestions[shuffledQuestionIndex]);
+}
 
+function showQuestion(question) {
+    questionImage.innerHTML = '';
+    const imageElement = document.createElement('img');
+    imageElement.src = question.imageSrc;
+    questionImage.appendChild(imageElement);
+    populateAnswerButtons(question);
+}
+
+function populateAnswerButtons(question) {
+    const answerButtons = document.getElementsByClassName('answer-btn');
+
+    question.answers.forEach((answer, index) => {
+        answerButtons[index].textContent = answer.text;
+    });
 }
 
 let questions = [
