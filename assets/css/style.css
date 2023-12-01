@@ -96,6 +96,12 @@ h1 {
     width: 288px;
 }
 
+img {
+    object-fit: cover;
+    height: 192px;
+    width: 288px;
+}
+
 .question-box > p {
     margin: 0;
 }
