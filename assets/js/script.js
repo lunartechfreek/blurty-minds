@@ -66,7 +66,12 @@ function populateAnswerButtons(question) {
     const answerButtons = document.getElementsByClassName('answer-btn');
 
     question.answers.forEach((answer, index) => {
-        answerButtons[index].textContent = answer.text;
+        const button = answerButtons[index];
+        button.textContent = answer.text
+        
+        button.addEventListener('click', function() {
+            checkAnswer(answer.correct);
+        });
     });
 }
 
