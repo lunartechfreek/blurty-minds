@@ -1,6 +1,8 @@
-// Wait for the dom to finish loading before running the game
-//Get the intro button elements and add event listeners to them
-//Set intro buttons to hide and display relevent sections
+/**
+ * Wait for the dom to finish loading before running the game
+ * Get the intro button elements and add event listeners to them
+ * Set intro buttons to hide and display relevent sections
+ */
 document.addEventListener("DOMContentLoaded", function() {
     let introButtons = document.getElementsByClassName('intro-btn');
 
@@ -26,21 +28,30 @@ let answerButtons = document.getElementsByClassName('answer-btn');
 
 let shuffledQuestions, shuffledQuestionIndex;
 
+/**
+ * Main function to run the game
+ */
 function runGame() {
+    // Code to show/hide relevent elements
     welcomeBox.classList.add('hide');
     questionBox.classList.remove('hide');
     scoreBox.classList.remove('hide');
     howToBox.classList.add('hide');
+    // Code to shuffle questions
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     shuffledQuestionIndex = 0;
     nextQuestion();
 }
 
+/**
+ * Function to set next question
+ */
 function nextQuestion() {
     showQuestion(shuffledQuestions[shuffledQuestionIndex]);
 }
 
 function showQuestion(question) {
+    // Code to show question image
     questionImage.innerHTML = '';
     const imageElement = document.createElement('img');
     imageElement.src = question.imageSrc;
@@ -48,6 +59,9 @@ function showQuestion(question) {
     populateAnswerButtons(question);
 }
 
+/**
+ * Function to add answers to answer button elements
+ */
 function populateAnswerButtons(question) {
     const answerButtons = document.getElementsByClassName('answer-btn');
 
