@@ -23,6 +23,7 @@ let howToBox = document.getElementsByClassName('how-to')[0];
 let questionBox = document.getElementsByClassName('question-box')[0];
 let scoreBox = document.getElementsByClassName('score-area')[0];
 let questionImage = document.getElementById('game-image');
+let nextButton = document.getElementById('next-btn');
 
 let answerButtons = document.getElementsByClassName('answer-btn');
 
@@ -79,6 +80,15 @@ function checkAnswer(correctAnswer, button) {
     if (correctAnswer) {
         console.log('Correct');
         this.classList.add('correct');
+        nextButton.classList.remove('hide');
+        nextButton.addEventListener('click', function() {
+            shuffledQuestionIndex++;
+            if (shuffledQuestionIndex < 10) {
+                nextQuestion();
+            } else {
+                console.log('Game Over');
+            }
+        });
     } else {
         console.log('Incorrect');
         this.classList.add('incorrect');
