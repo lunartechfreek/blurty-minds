@@ -64,38 +64,49 @@ function showQuestion(question) {
 }
 
 /**
- * Function to add answers to answer button elements
+ * Function to add answers to answer button elements,
+ * remove event listeners from button elements to reset,
+ * and to add correct dataset
  */
 function populateAnswerButtons(question) {
     const answerButtons = document.getElementsByClassName('answer-btn');
 
+    //Remove event listeners
     for (const button of answerButtons) {
-        button.removeEventListener('click', handleAnswerClick);
+        button.removeEventListener('click', checkAnswerClick);
     }
 
+    //Displays answers on buttons
     question.answers.forEach((answer, index) => {
         const button = answerButtons[index];
         button.textContent = answer.text
         
+        //Add dataset attribute
         button.dataset.correct = answer.correct;
 
-        button.addEventListener('click', handleAnswerClick);
+        //Adds event listener to all buttons
+        button.addEventListener('click', checkAnswerClick);
     });
 }
 
-function handleAnswerClick() {
+/**
+ * Function to check the answer clicked on 
+ */
+function checkAnswerClick() {
     const correctAnswer = this.dataset.correct === 'true';
     checkAnswer(correctAnswer, this);
 }
 
 /**
  * Function to check if the answer is correct
+ * and to handle what to do with the answer
  */
 function checkAnswer(correctAnswer, button) {
     resetButtons();
     if (correctAnswer) {
         console.log('Correct');
         button.classList.add('correct');
+        //Code to show next button
         nextButton.classList.remove('hide');
     } else {
         console.log('Incorrect');
@@ -110,6 +121,7 @@ function checkAnswer(correctAnswer, button) {
 function resetButtons() {
     const answerButtons = document.getElementsByClassName('answer-btn');
 
+    //Loop to remove button classes
     for (const button of answerButtons) {
         button.classList.remove('correct', 'incorrect');
     }
