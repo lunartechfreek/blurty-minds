@@ -96,7 +96,6 @@ function checkAnswer(correctAnswer, button) {
     if (correctAnswer) {
         console.log('Correct');
         button.classList.add('correct');
-        //nextButton.classList.remove('hide');
     } else {
         console.log('Incorrect');
         button.classList.add('incorrect');
