@@ -29,6 +29,9 @@ let answerButtons = document.getElementsByClassName('answer-btn');
 
 let shuffledQuestions, shuffledQuestionIndex;
 
+//Code to make the next button call the reset function
+//nextButton.addEventListener('click', reset);
+
 /**
  * Main function to run the game
  */
@@ -66,28 +69,46 @@ function showQuestion(question) {
 function populateAnswerButtons(question) {
     const answerButtons = document.getElementsByClassName('answer-btn');
 
+    for (const button of answerButtons) {
+        button.removeEventListener('click', handleAnswerClick);
+    }
+
     question.answers.forEach((answer, index) => {
         const button = answerButtons[index];
         button.textContent = answer.text
         
-        button.addEventListener('click', function() {
-            checkAnswer.call(button, answer.correct);
-        });
+        button.dataset.correct = answer.correct;
+
+        button.addEventListener('click', handleAnswerClick);
     });
 }
 
+function handleAnswerClick() {
+    const correctAnswer = this.dataset.correct === 'true';
+    checkAnswer(correctAnswer, this);
+}
+
+/**
+ * Function to check if the answer is correct
+ */
 function checkAnswer(correctAnswer, button) {
     resetButtons();
     if (correctAnswer) {
         console.log('Correct');
-        this.classList.add('correct');
-        nextButton.classList.remove('hide');
+        button.classList.add('correct');
+        //nextButton.classList.remove('hide');
     } else {
         console.log('Incorrect');
-        this.classList.add('incorrect');
+        button.classList.add('incorrect');
+        return;
     }
+
+    nextButton.classList.remove('hide');
 }
 
+/**
+ * Function to reset the button colours
+ */
 function resetButtons() {
     const answerButtons = document.getElementsByClassName('answer-btn');
 
@@ -96,10 +117,15 @@ function resetButtons() {
     }
 }
 
+/**
+ * Function to reset everything for next question
+ */
 function reset() {
     resetButtons();
     nextButton.classList.add('hide');
+    //Code to clear question
     questionImage.innerHTML = '';
+    //Code to get next question
     shuffledQuestionIndex++;
 
     if (shuffledQuestionIndex < 10) {
@@ -110,6 +136,7 @@ function reset() {
 }
 
 nextButton.addEventListener('click', reset);
+
 
 let questions = [
     {
