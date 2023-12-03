@@ -30,7 +30,7 @@ let answerButtons = document.getElementsByClassName('answer-btn');
 let shuffledQuestions, shuffledQuestionIndex;
 
 //Code to make the next button call the reset function
-//nextButton.addEventListener('click', reset);
+nextButton.addEventListener('click', reset);
 
 /**
  * Main function to run the game
@@ -96,13 +96,12 @@ function checkAnswer(correctAnswer, button) {
     if (correctAnswer) {
         console.log('Correct');
         button.classList.add('correct');
+        nextButton.classList.remove('hide');
     } else {
         console.log('Incorrect');
         button.classList.add('incorrect');
         return;
     }
-
-    nextButton.classList.remove('hide');
 }
 
 /**
@@ -133,9 +132,6 @@ function reset() {
         console.log('Game Over');
     }
 }
-
-nextButton.addEventListener('click', reset);
-
 
 let questions = [
     {
