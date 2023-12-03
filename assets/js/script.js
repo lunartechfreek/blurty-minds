@@ -77,23 +77,39 @@ function populateAnswerButtons(question) {
 }
 
 function checkAnswer(correctAnswer, button) {
+    resetButtons();
     if (correctAnswer) {
         console.log('Correct');
         this.classList.add('correct');
         nextButton.classList.remove('hide');
-        nextButton.addEventListener('click', function() {
-            shuffledQuestionIndex++;
-            if (shuffledQuestionIndex < 10) {
-                nextQuestion();
-            } else {
-                console.log('Game Over');
-            }
-        });
     } else {
         console.log('Incorrect');
         this.classList.add('incorrect');
     }
 }
+
+function resetButtons() {
+    const answerButtons = document.getElementsByClassName('answer-btn');
+
+    for (const button of answerButtons) {
+        button.classList.remove('correct', 'incorrect');
+    }
+}
+
+function reset() {
+    resetButtons();
+    nextButton.classList.add('hide');
+    questionImage.innerHTML = '';
+    shuffledQuestionIndex++;
+
+    if (shuffledQuestionIndex < 10) {
+        nextQuestion();
+    } else {
+        console.log('Game Over');
+    }
+}
+
+nextButton.addEventListener('click', reset);
 
 let questions = [
     {
