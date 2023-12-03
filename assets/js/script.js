@@ -70,9 +70,19 @@ function populateAnswerButtons(question) {
         button.textContent = answer.text
         
         button.addEventListener('click', function() {
-            checkAnswer(answer.correct);
+            checkAnswer.call(button, answer.correct);
         });
     });
+}
+
+function checkAnswer(correctAnswer, button) {
+    if (correctAnswer) {
+        console.log('Correct');
+        this.classList.add('correct');
+    } else {
+        console.log('Incorrect');
+        this.classList.add('incorrect');
+    }
 }
 
 let questions = [
