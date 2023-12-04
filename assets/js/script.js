@@ -23,14 +23,18 @@ let howToBox = document.getElementsByClassName('how-to')[0];
 let questionBox = document.getElementsByClassName('question-box')[0];
 let scoreBox = document.getElementsByClassName('score-area')[0];
 let questionImage = document.getElementById('game-image');
-let nextButton = document.getElementById('next-btn');
-
 let answerButtons = document.getElementsByClassName('answer-btn');
+let nextButton = document.getElementById('next-btn');
+let gameEndBox = document.getElementsByClassName('game-end')[0];
+let restartButton = document.getElementById('restart-btn');
+
 
 let shuffledQuestions, shuffledQuestionIndex;
 
 //Code to make the next button call the reset function
 nextButton.addEventListener('click', reset);
+
+restartButton.addEventListener('click', runGame);
 
 /**
  * Main function to run the game
@@ -41,6 +45,7 @@ function runGame() {
     questionBox.classList.remove('hide');
     scoreBox.classList.remove('hide');
     howToBox.classList.add('hide');
+    gameEndBox.classList.add('hide');
     // Code to shuffle questions
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     shuffledQuestionIndex = 0;
@@ -141,6 +146,9 @@ function reset() {
     if (shuffledQuestionIndex < 10) {
         nextQuestion();
     } else {
+        gameEndBox.classList.remove('hide');
+        questionBox.classList.add('hide');
+        scoreBox.classList.add('hide');
         console.log('Game Over');
     }
 }
