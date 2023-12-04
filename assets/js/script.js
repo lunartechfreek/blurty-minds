@@ -57,6 +57,7 @@ function runGame() {
  */
 function nextQuestion() {
     showQuestion(shuffledQuestions[shuffledQuestionIndex]);
+    startCountdown();
 }
 
 function showQuestion(question) {
@@ -153,6 +154,37 @@ function reset() {
     }
 }
 
+let timerInterval;
+/**
+ * Function for countdown timer
+ */
+function startCountdown() {
+    let seconds = 10;
+
+    const timer = document.getElementById('timer');
+
+    function updateTimer() {
+        //Add countdown text to element
+        timer.innerHTML = `${seconds} seconds remaining`;
+
+        if (seconds > 0) {
+            seconds--;
+        } else {
+            clearInterval(timerInterval);
+            timer.innerHTML = "Time's up!";
+        }
+    }
+
+    //Clears existing imer to stop overlapping
+    if (timerInterval) {
+        clearInterval(timerInterval);
+    }
+
+    //Increments updateTimer code to run every one second
+    timerInterval = setInterval(updateTimer, 1000);
+}
+
+// Game Questions 
 let questions = [
     {
         imageSrc: 'assets/images/animals/chameleon.webp',
