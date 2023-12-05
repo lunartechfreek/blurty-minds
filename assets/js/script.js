@@ -38,7 +38,9 @@ restartButton.addEventListener('click', function() {
     if (timerInterval) {
         clearInterval(timerInterval);
     }
-
+    imgBlur.style.filter = "blur(20px)";
+    score = 0;
+    scoreSpan.innerText = 0;
     runGame();
 });
 
