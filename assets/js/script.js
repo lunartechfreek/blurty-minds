@@ -177,7 +177,7 @@ function reset() {
 
     if (shuffledQuestionIndex < 10) {
         setTimeout(() => {
-        nextQuestion();
+            nextQuestion();
         }, 500);
     } else {
         gameEndBox.classList.remove('hide');
