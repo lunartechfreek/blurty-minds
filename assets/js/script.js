@@ -50,6 +50,7 @@ function runGame() {
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     shuffledQuestionIndex = 0;
     nextQuestion();
+    startCountdown();
 }
 
 /**
@@ -57,7 +58,6 @@ function runGame() {
  */
 function nextQuestion() {
     showQuestion(shuffledQuestions[shuffledQuestionIndex]);
-    startCountdown();
 }
 
 function showQuestion(question) {
@@ -112,11 +112,14 @@ function checkAnswer(correctAnswer, button) {
     if (correctAnswer) {
         console.log('Correct');
         button.classList.add('correct');
-        //Code to show next button
+        //Shows the next button
         nextButton.classList.remove('hide');
+        //Stops timer when answer is correct
+        clearInterval(timerInterval);
     } else {
         console.log('Incorrect');
         button.classList.add('incorrect');
+        //Exits function if incorrect
         return;
     }
 }
@@ -139,6 +142,9 @@ function resetButtons() {
 function reset() {
     resetButtons();
     nextButton.classList.add('hide');
+    //Clears timer
+    clearInterval(timerInterval);
+    startCountdown();
     //Code to clear question
     questionImage.innerHTML = '';
     //Code to get next question
@@ -165,7 +171,7 @@ function startCountdown() {
 
     function updateTimer() {
         //Add countdown text to element
-        timer.innerHTML = `${seconds} seconds remaining`;
+        timer.innerHTML = `${seconds} seconds`;
 
         if (seconds > 0) {
             seconds--;
@@ -175,10 +181,9 @@ function startCountdown() {
         }
     }
 
-    //Clears existing imer to stop overlapping
-    if (timerInterval) {
-        clearInterval(timerInterval);
-    }
+    //Clears existing timer to stop overlapping
+    //Placeholder text before countdown starts
+    timer.innerHTML = 'Get Ready...';
 
     //Increments updateTimer code to run every one second
     timerInterval = setInterval(updateTimer, 1000);
