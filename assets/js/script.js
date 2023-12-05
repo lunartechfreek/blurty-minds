@@ -163,23 +163,25 @@ function resetButtons() {
  * Function to reset everything for next question
  */
 function reset() {
+    imgBlur.style.filter = "blur(20px)";
     resetButtons();
-    enableButtons()
+    enableButtons();
     nextButton.classList.add('hide');
     //Clears timer
     clearInterval(timerInterval);
     startCountdown();
-    //Code to clear question
-    questionImage.innerHTML = '';
     //Code to get next question
     shuffledQuestionIndex++;
 
     if (shuffledQuestionIndex < 10) {
+        setTimeout(() => {
         nextQuestion();
+        }, 500);
     } else {
         gameEndBox.classList.remove('hide');
         questionBox.classList.add('hide');
         scoreBox.classList.add('hide');
+        finalScoreSpan.innerText = score;
         console.log('Game Over');
     }
 }
