@@ -34,7 +34,13 @@ let shuffledQuestions, shuffledQuestionIndex;
 //Code to make the next button call the reset function
 nextButton.addEventListener('click', reset);
 
-restartButton.addEventListener('click', runGame);
+restartButton.addEventListener('click', function() {
+    if (timerInterval) {
+        clearInterval(timerInterval);
+    }
+
+    runGame();
+});
 
 /**
  * Main function to run the game
@@ -135,6 +141,7 @@ function resetButtons() {
         button.classList.remove('correct', 'incorrect');
     }
 }
+
 
 /**
  * Function to reset everything for next question
