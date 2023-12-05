@@ -149,9 +149,9 @@ img {
     background-color: #FF3030;
 }
 
-/* Hide Class */
-.hide {
-    display: none;
+#img-blur {
+    filter: blur(20px);
+    transition: all 0.5s ease-in-out;
 }
 
 /* Media query: narrow screens (415px and under) */
