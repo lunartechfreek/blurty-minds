@@ -184,7 +184,9 @@ let timerInterval;
  * Function for countdown timer
  */
 function startCountdown() {
-    let seconds = 10;
+    seconds = 10;
+
+    let blur = 20;
 
     const timer = document.getElementById('timer');
 
@@ -194,9 +196,14 @@ function startCountdown() {
 
         if (seconds > 0) {
             seconds--;
+            blur -= 2;
+            imgBlur.style.filter = `blur(${blur}px)`;
         } else {
+            disableButtons();
             clearInterval(timerInterval);
             timer.innerHTML = "Time's up!";
+            imgBlur.style.filter = `blur(0px)`;
+            nextButton.classList.remove('hide');
         }
     }
 
