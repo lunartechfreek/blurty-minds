@@ -22,11 +22,16 @@ let welcomeBox = document.getElementsByClassName('welcome')[0];
 let howToBox = document.getElementsByClassName('how-to')[0];
 let questionBox = document.getElementsByClassName('question-box')[0];
 let scoreBox = document.getElementsByClassName('score-area')[0];
+let scoreSpan = document.getElementById('score');
+let finalScoreSpan = document.getElementById('final-score');
 let questionImage = document.getElementById('game-image');
+let imgBlur = document.getElementById('img-blur');
 let answerButtons = document.querySelectorAll('.answer-btn');
 let nextButton = document.getElementById('next-btn');
 let gameEndBox = document.getElementsByClassName('game-end')[0];
 let restartButton = document.getElementById('restart-btn');
+let seconds = 10;
+let score = 0;
 
 
 let shuffledQuestions, shuffledQuestionIndex;
