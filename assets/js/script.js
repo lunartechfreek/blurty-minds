@@ -70,10 +70,7 @@ function nextQuestion() {
 
 function showQuestion(question) {
     // Code to show question image
-    questionImage.innerHTML = '';
-    const imageElement = document.createElement('img');
-    imageElement.src = question.imageSrc;
-    questionImage.appendChild(imageElement);
+    imgBlur.src = question.imageSrc;
     populateAnswerButtons(question);
 }
 
