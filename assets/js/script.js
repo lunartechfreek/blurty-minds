@@ -118,6 +118,7 @@ function checkAnswerClick() {
  * and to handle what to do with the answer
  */
 function checkAnswer(correctAnswer, button) {
+    let penalty = 5;
     resetButtons();
     if (correctAnswer) {
         disableButtons();
@@ -135,6 +136,9 @@ function checkAnswer(correctAnswer, button) {
     } else {
         console.log('Incorrect');
         button.classList.add('incorrect');
+        //Penalty for incorrect selection
+        score -= penalty; 
+        scoreSpan.innerText = score;
         //Exits function if incorrect
         return;
     }
