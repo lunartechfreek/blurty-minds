@@ -129,6 +129,8 @@ function checkAnswer(correctAnswer, button) {
         //Increments and displays score 
         score += seconds + 1;
         scoreSpan.innerText = score;
+        //Points scored for current question
+        timer.innerHTML = `You scored ${seconds + 1}`;
         //Shows the next button
         nextButton.classList.remove('hide');
         //Stops timer when answer is correct
@@ -207,6 +209,8 @@ function reset() {
     }
 }
 
+let timer = document.getElementById('timer');
+
 let timerInterval;
 /**
  * Function for countdown timer
@@ -216,7 +220,7 @@ function startCountdown() {
 
     let blur = 20;
 
-    const timer = document.getElementById('timer');
+    
 
     function updateTimer() {
         //Add countdown text to element
