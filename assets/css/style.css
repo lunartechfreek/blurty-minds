@@ -151,6 +151,7 @@ img {
 
 #img-blur {
     filter: blur(20px);
+    /* Makes smooth transition between blur */
     transition: all 0.5s ease-in-out;
 }
 
@@ -177,6 +178,7 @@ img {
     display: none;
 }
 
+/* Disables the buttons */
 .disable {
     pointer-events: none;
 }
