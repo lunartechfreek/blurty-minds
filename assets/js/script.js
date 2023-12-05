@@ -43,6 +43,7 @@ restartButton.addEventListener('click', function() {
     if (timerInterval) {
         clearInterval(timerInterval);
     }
+    //Resets blur and score
     imgBlur.style.filter = "blur(20px)";
     score = 0;
     scoreSpan.innerText = 0;
@@ -120,9 +121,11 @@ function checkAnswer(correctAnswer, button) {
     resetButtons();
     if (correctAnswer) {
         disableButtons();
+        //Shows image in full
         imgBlur.style.filter = "blur(0px)";
         console.log('Correct');
         button.classList.add('correct');
+        //Increments and displays score 
         score += seconds + 1;
         scoreSpan.innerText = score;
         //Shows the next button
@@ -137,12 +140,20 @@ function checkAnswer(correctAnswer, button) {
     }
 }
 
+/**
+ * Funcion to disable the buttons
+ * being clicked on
+ */
 function disableButtons() {
     answerButtons.forEach(btn => {
         btn.classList.add('disable');
     });
 }
 
+/**
+ * Funcion to enable the buttons to
+ * be clicked on
+ */
 function enableButtons() {
     answerButtons.forEach(btn => {
         btn.classList.remove('disable');
@@ -165,6 +176,7 @@ function resetButtons() {
  * Function to reset everything for next question
  */
 function reset() {
+    //Resets blur
     imgBlur.style.filter = "blur(20px)";
     resetButtons();
     enableButtons();
@@ -176,6 +188,8 @@ function reset() {
     shuffledQuestionIndex++;
 
     if (shuffledQuestionIndex < 10) {
+        //Code for smoother transition
+        //between questions
         setTimeout(() => {
             nextQuestion();
         }, 500);
@@ -183,6 +197,7 @@ function reset() {
         gameEndBox.classList.remove('hide');
         questionBox.classList.add('hide');
         scoreBox.classList.add('hide');
+        //Displays score on game end 
         finalScoreSpan.innerText = score;
         console.log('Game Over');
     }
@@ -205,12 +220,14 @@ function startCountdown() {
 
         if (seconds > 0) {
             seconds--;
+            //Dynamically reduces blur by -2px
             blur -= 2;
             imgBlur.style.filter = `blur(${blur}px)`;
         } else {
             disableButtons();
             clearInterval(timerInterval);
             timer.innerHTML = "Time's up!";
+            //Shows full image when timer runs out
             imgBlur.style.filter = `blur(0px)`;
             nextButton.classList.remove('hide');
         }
