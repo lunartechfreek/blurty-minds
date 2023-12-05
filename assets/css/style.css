@@ -172,6 +172,11 @@ img {
 
 }
 
+/* Hide Class */
+.hide {
+    display: none;
+}
+
 .disable {
     pointer-events: none;
 }
