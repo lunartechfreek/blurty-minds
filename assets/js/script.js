@@ -230,7 +230,7 @@ function startCountdown() {
         } else {
             disableButtons();
             clearInterval(timerInterval);
-            timer.innerHTML = "Time's up!";
+            timer.innerHTML = "0 points scored!";
             //Shows full image when timer runs out
             imgBlur.style.filter = `blur(0px)`;
             nextButton.classList.remove('hide');
