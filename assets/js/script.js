@@ -23,7 +23,7 @@ let howToBox = document.getElementsByClassName('how-to')[0];
 let questionBox = document.getElementsByClassName('question-box')[0];
 let scoreBox = document.getElementsByClassName('score-area')[0];
 let questionImage = document.getElementById('game-image');
-let answerButtons = document.getElementsByClassName('answer-btn');
+let answerButtons = document.querySelectorAll('.answer-btn');
 let nextButton = document.getElementById('next-btn');
 let gameEndBox = document.getElementsByClassName('game-end')[0];
 let restartButton = document.getElementById('restart-btn');
@@ -81,7 +81,6 @@ function showQuestion(question) {
  * and to add correct dataset
  */
 function populateAnswerButtons(question) {
-    const answerButtons = document.getElementsByClassName('answer-btn');
 
     //Remove event listeners
     for (const button of answerButtons) {
@@ -116,6 +115,7 @@ function checkAnswerClick() {
 function checkAnswer(correctAnswer, button) {
     resetButtons();
     if (correctAnswer) {
+        disableButtons();
         console.log('Correct');
         button.classList.add('correct');
         //Shows the next button
@@ -130,11 +130,22 @@ function checkAnswer(correctAnswer, button) {
     }
 }
 
+function disableButtons() {
+    answerButtons.forEach(btn => {
+        btn.classList.add('disable');
+    });
+}
+
+function enableButtons() {
+    answerButtons.forEach(btn => {
+        btn.classList.remove('disable');
+    });
+}
+
 /**
  * Function to reset the button colours
  */
 function resetButtons() {
-    const answerButtons = document.getElementsByClassName('answer-btn');
 
     //Loop to remove button classes
     for (const button of answerButtons) {
@@ -148,6 +159,7 @@ function resetButtons() {
  */
 function reset() {
     resetButtons();
+    enableButtons()
     nextButton.classList.add('hide');
     //Clears timer
     clearInterval(timerInterval);
