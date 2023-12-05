@@ -118,8 +118,11 @@ function checkAnswer(correctAnswer, button) {
     resetButtons();
     if (correctAnswer) {
         disableButtons();
+        imgBlur.style.filter = "blur(0px)";
         console.log('Correct');
         button.classList.add('correct');
+        score += seconds + 1;
+        scoreSpan.innerText = score;
         //Shows the next button
         nextButton.classList.remove('hide');
         //Stops timer when answer is correct
