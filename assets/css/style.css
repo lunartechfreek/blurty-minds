@@ -97,8 +97,8 @@ h1 {
 
 img {
     object-fit: cover;
-    height: 192px;
-    width: 288px;
+    height: inherit;
+    width: inherit;
 }
 
 .question-box > p {
