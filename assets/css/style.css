@@ -156,7 +156,29 @@ img {
     transition: all 0.5s ease-in-out;
 }
 
-/* Media query: narrow screens (415px and under) */
+/* Media query: narrow screens (305px and under) */
+@media screen and (max-width: 305px) {
+   #game-box {
+    width: 93%;
+   }
+
+   #game-image {
+    height: 164px;
+    width: 246px;
+    }
+
+    .btn {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+
+    .how-to > ul {
+        font-size: 0.88rem;
+    }
+
+}
+
+/* Media query: mobile screens (415px and under) */
 @media screen and (max-width: 415px) {
     h1 {
         font-size: 2rem;
