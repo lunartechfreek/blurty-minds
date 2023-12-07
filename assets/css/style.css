@@ -29,10 +29,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header */
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h1 {
     font-size: 2.5rem;
     color: white;
-    margin: 20px;
+    margin: 20px 15px 20px 0;
+}
+
+#brain-logo {
+    height: 55px;
 }
 
 /* Game Area */
