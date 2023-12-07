@@ -168,11 +168,21 @@ img {
 
 /* Media query: narrow screens (305px and under) */
 @media screen and (max-width: 305px) {
-   #game-box {
-    width: 93%;
-   }
+    /* Header */
+    #brain-logo {
+        height: 45px;
+    }
 
-   #game-image {
+    h1 {
+        font-size: 1.7rem;
+    }
+    
+    /* Game area */ 
+    #game-box {
+    width: 93%;
+    }
+
+    #game-image {
     height: 164px;
     width: 246px;
     }
@@ -191,13 +201,21 @@ img {
 /* Media query: mobile screens (415px and under) */
 @media screen and (max-width: 415px) {
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+
+    #brain-logo {
+        height: 70px;
     }
 
 }
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+    /* Header */
+    #brain-logo {
+        height: 60px;
+    }
 
 }
 
