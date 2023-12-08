@@ -53,7 +53,7 @@ h1 {
     flex-direction: column;
     width: 85%;
     height: 75vh;
-    max-height: 500px;
+    max-height: 900px;
     max-width: 900px;
     margin: 0 auto;
     background-color: #FCFBFF;
@@ -92,7 +92,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 85%;
+    width: 90%;
 }
 
 .question-box > h2 {
@@ -114,6 +114,7 @@ img {
 
 .question-box > p {
     margin: 0;
+    font-size: 1.3rem;
 }
 
 #answer-box {
@@ -149,7 +150,7 @@ img {
     min-height: 30px;
     background-color: #00D2FC;
     padding: 10px;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .correct {
@@ -164,6 +165,39 @@ img {
     filter: blur(20px);
     /* Makes smooth transition between blur */
     transition: all 0.5s ease-in-out;
+}
+
+/* Media query: mobile screens (415px and under) */
+@media screen and (max-width: 415px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+}
+
+/* Media query: mobile screens (389px and under) */
+@media screen and (max-width: 389px) {
+   .btn {
+    font-size: 1.15rem;
+   }
+
+}
+
+/* Media query: mobile screens (350px and under) */
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 2.05rem;
+    }
+
+    #game-image {
+        height: 164px;
+        width: 246px;
+    }
+
+    .btn {
+        font-size: 0.94rem;
+    }
+
 }
 
 /* Media query: narrow screens (305px and under) */
@@ -182,9 +216,8 @@ img {
     width: 93%;
     }
 
-    #game-image {
-    height: 164px;
-    width: 246px;
+    .question-box > p {
+        font-size: 1.2rem;
     }
 
     .btn {
@@ -194,18 +227,6 @@ img {
 
     .how-to > ul {
         font-size: 0.88rem;
-    }
-
-}
-
-/* Media query: mobile screens (415px and under) */
-@media screen and (max-width: 415px) {
-    h1 {
-        font-size: 3rem;
-    }
-
-    #brain-logo {
-        height: 70px;
     }
 
 }
