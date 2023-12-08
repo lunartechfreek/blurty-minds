@@ -138,12 +138,24 @@ function checkAnswer(correctAnswer, button) {
     } else {
         console.log('Incorrect');
         button.classList.add('incorrect');
+        buzz(button);
         //Penalty for incorrect selection
         score -= penalty; 
         scoreSpan.innerText = score;
         //Exits function if incorrect
         return;
     }
+}
+
+/**
+ * Function to make button buzz on
+ * incorrect answer for short time
+ */
+function buzz(button) {
+    button.classList.add('clicked');
+        setTimeout(() => {
+            button.classList.remove('clicked');
+          }, 700);
 }
 
 /**
