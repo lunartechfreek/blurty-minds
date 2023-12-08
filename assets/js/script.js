@@ -149,8 +149,8 @@ function checkAnswer(correctAnswer, button) {
 }
 
 /**
- * Function to make button buzz on
- * incorrect answer for short time
+ * Function to make button grow on
+ * grow answer for short time
  */
 function grow(button) {
     button.classList.add('selected');
