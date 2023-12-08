@@ -126,6 +126,7 @@ function checkAnswer(correctAnswer, button) {
         imgBlur.style.filter = "blur(0px)";
         console.log('Correct');
         button.classList.add('correct');
+        grow(button);
         //Increments and displays score 
         score += seconds + 1;
         scoreSpan.innerText = score;
@@ -145,6 +146,17 @@ function checkAnswer(correctAnswer, button) {
         //Exits function if incorrect
         return;
     }
+}
+
+/**
+ * Function to make button buzz on
+ * incorrect answer for short time
+ */
+function grow(button) {
+    button.classList.add('selected');
+        setTimeout(() => {
+            button.classList.remove('selected');
+          }, 1000);
 }
 
 /**
