@@ -4,16 +4,16 @@
  * Set intro buttons to hide and display relevent sections
  */
 document.addEventListener("DOMContentLoaded", function() {
-    let introButtons = document.getElementsByClassName('intro-btn');
+    let controlButtons = document.getElementsByClassName('ctrl-btn');
 
-    for (let introbutton of introButtons) {
-        introbutton.addEventListener('click', function () {
-            if (introbutton.id === 'how-to-btn') {
+    for (let controlbutton of controlButtons) {
+        controlbutton.addEventListener('click', function () {
+            if (controlbutton.id === 'how-to-btn') {
                 welcomeBox.classList.add('hide');
                 howToBox.classList.remove('hide');
-            } else if (introbutton.id === 'animal-btn') {
+            } else if (controlbutton.id === 'animal-btn') {
                 displayAnimalQuestions();
-            } else if (introbutton.id === 'landmark-btn') {
+            } else if (controlbutton.id === 'landmark-btn') {
                 displayLandmarkQuestions();
             } else {
                 home();
