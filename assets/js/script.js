@@ -11,11 +11,17 @@ document.addEventListener("DOMContentLoaded", function() {
             if (introbutton.id === 'how-to-btn') {
                 welcomeBox.classList.add('hide');
                 howToBox.classList.remove('hide');
+            } else if (introbutton.id === 'animal-btn') {
+                displayAnimalQuestions();
+            } else if (introbutton.id === 'landmark-btn') {
+                displayLandmarkQuestions();
             } else {
-                runGame();
+                home();
             }
+            
         });
     }
+
 });
 
 let welcomeBox = document.getElementsByClassName('welcome')[0];
@@ -101,6 +107,10 @@ function nextQuestion() {
     showQuestion(shuffledQuestions[shuffledQuestionIndex]);
 }
 
+/**
+ * Function to display the image
+ * and answers for the question
+ */
 function showQuestion(question) {
     // Code to show question image
     imgBlur.src = question.imageSrc;
