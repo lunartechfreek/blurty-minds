@@ -65,16 +65,17 @@ function displayLandmarkQuestions() {
 /**
  * Main function to run the game
  */
-function runGame() {
-    // Code to show/hide relevent elements
+function runGame(questionArray) {
     welcomeBox.classList.add('hide');
     questionBox.classList.remove('hide');
     scoreBox.classList.remove('hide');
     howToBox.classList.add('hide');
     gameEndBox.classList.add('hide');
-    // Code to shuffle questions
-    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+
+    // Shuffle questions
+    shuffledQuestions = questionArray.sort(() => Math.random() - 0.5);
     shuffledQuestionIndex = 0;
+
     nextQuestion();
     startCountdown();
 }
