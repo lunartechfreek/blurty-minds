@@ -67,6 +67,20 @@ function runGame() {
     startCountdown();
 }
 
+//Code to make the next button call the reset function
+nextButton.addEventListener('click', reset);
+
+homeButton.addEventListener('click', function() {
+    if (timerInterval) {
+        clearInterval(timerInterval);
+    }
+    //Resets blur and score
+    imgBlur.style.filter = "blur(20px)";
+    score = 0;
+    scoreSpan.innerText = 0;
+    home();
+});
+
 /**
  * Function to set next question
  */
