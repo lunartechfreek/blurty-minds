@@ -104,6 +104,7 @@ h1 {
 #game-image {
     height: 192px;
     width: 288px;
+    overflow: hidden;
 }
 
 img {
