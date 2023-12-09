@@ -163,7 +163,7 @@ function checkAnswer(correctAnswer, button) {
         imgBlur.style.filter = "blur(0px)";
         console.log('Correct');
         button.classList.add('correct');
-        grow(button);
+        ifRight(button, border);
         //Increments and displays score 
         score += seconds + 1;
         scoreSpan.innerText = score;
@@ -176,7 +176,7 @@ function checkAnswer(correctAnswer, button) {
     } else {
         console.log('Incorrect');
         button.classList.add('incorrect');
-        buzz(button);
+        ifWrong(button, border);
         //Penalty for incorrect selection
         score -= penalty; 
         scoreSpan.innerText = score;
@@ -185,25 +185,31 @@ function checkAnswer(correctAnswer, button) {
     }
 }
 
+let border = document.getElementById('image-border');
+
 /**
- * Function to make button grow on
- * grow answer for short time
+ * Function to make button grow and border to
+ * turn green on correct answer for short time
  */
-function grow(button) {
+function ifRight(button, border) {
     button.classList.add('selected');
+    border.classList.add('correct')
         setTimeout(() => {
             button.classList.remove('selected');
+            border.classList.remove('correct')
           }, 1000);
 }
 
 /**
- * Function to make button buzz on
- * incorrect answer for short time
+ * Function to make button buzz and border to 
+ * turn red on incorrect answer for short time
  */
-function buzz(button) {
+function ifWrong(button, border) {
     button.classList.add('clicked');
+    border.classList.add('incorrect')
         setTimeout(() => {
             button.classList.remove('clicked');
+            border.classList.remove('incorrect')
           }, 700);
 }
 
