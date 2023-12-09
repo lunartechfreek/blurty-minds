@@ -101,6 +101,14 @@ h1 {
     margin: 0;
 }
 
+#image-border {
+    height: 207px;
+    width: 303px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #game-image {
     height: 192px;
     width: 288px;
