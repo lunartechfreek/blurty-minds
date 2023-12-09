@@ -29,26 +29,26 @@ let imgBlur = document.getElementById('img-blur');
 let answerButtons = document.querySelectorAll('.answer-btn');
 let nextButton = document.getElementById('next-btn');
 let gameEndBox = document.getElementsByClassName('game-end')[0];
-let restartButton = document.getElementById('restart-btn');
+let homeButton = document.getElementById('home-btn');
 let seconds = 10;
 let score = 0;
 
-
 let shuffledQuestions, shuffledQuestionIndex;
 
-//Code to make the next button call the reset function
-nextButton.addEventListener('click', reset);
+/**
+ * Function to take you back to the
+ * home section
+ */
+function home() {
+    welcomeBox.classList.remove('hide');
+    howToBox.classList.add('hide');
+    questionBox.classList.add('hide');
+    scoreBox.classList.add('hide');
+    gameEndBox.classList.add('hide');
+    console.log('Home');
+}
 
-restartButton.addEventListener('click', function() {
-    if (timerInterval) {
-        clearInterval(timerInterval);
-    }
-    //Resets blur and score
-    imgBlur.style.filter = "blur(20px)";
-    score = 0;
-    scoreSpan.innerText = 0;
-    runGame();
-});
+/**
 
 /**
  * Main function to run the game
