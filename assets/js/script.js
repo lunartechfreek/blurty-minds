@@ -274,7 +274,7 @@ function startCountdown() {
 }
 
 // Game Questions 
-let questions = [
+let animalQuestions = [
     {
         imageSrc: 'assets/images/animals/chameleon.webp',
         answers: [
