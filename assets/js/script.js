@@ -49,6 +49,18 @@ function home() {
 }
 
 /**
+ * Function to display animal questions
+ */
+function displayAnimalQuestions() {
+    runGame(animalQuestions);
+}
+
+/**
+ * Function to display landmark questions
+ */
+function displayLandmarkQuestions() {
+    runGame(landmarkQuestions);
+}
 
 /**
  * Main function to run the game
