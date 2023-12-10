@@ -724,7 +724,7 @@ img {
 
 }
 
-/* Media query: Laptops and larger (1200px and up) */
+/* Media query: Desktops and larger (1200px and up) */
 @media screen and (min-width: 1200px) {
     #game-box {
         max-width: 1000px;
