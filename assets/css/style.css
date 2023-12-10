@@ -52,7 +52,7 @@ h1 {
     align-items: center;
     flex-direction: column;
     width: 85%;
-    height: 75vh;
+    height: 77vh;
     max-height: 900px;
     max-width: 900px;
     margin: 0 auto;
@@ -122,8 +122,8 @@ img {
 }
 
 .question-box > p {
-    margin: 0;
-    font-size: 1.3rem;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
 }
 
 #answer-box {
@@ -138,9 +138,13 @@ img {
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 75%;
+    width: 90%;
     justify-content: space-between;
     margin-bottom: 20px;
+}
+
+.score-area > p {
+    font-size: 1.2rem;
 }
 
 .game-end {
@@ -161,6 +165,12 @@ img {
     background-color: #00D2FC;
     padding: 10px;
     font-size: 1.25rem;
+}
+
+.answer-btn {
+    max-width: 100%;
+    min-height: 40px;
+    padding: 7px;
 }
 
 .correct {
@@ -258,6 +268,11 @@ img {
 @media screen and (max-width: 389px) {
    .btn {
     font-size: 1.15rem;
+    padding: 7px;
+   }
+
+   .score-area {
+    margin-bottom: 10px;
    }
 
 }
@@ -301,7 +316,7 @@ img {
     }
 
     .question-box > p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .btn {
@@ -313,6 +328,13 @@ img {
         font-size: 0.88rem;
     }
 
+    .score-area > p {
+        font-size: 1.1rem;
+    }
+
+}
+
+/* Media query: small tablets and larger (535px and up) */
 }
 
 /* Media query: tablets and larger (768px and up) */
