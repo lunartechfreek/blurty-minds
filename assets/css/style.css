@@ -381,6 +381,10 @@ img {
         font-size: 0.94rem;
     }
 
+    .ctrl-btn {
+        font-size: 1.1rem;
+        }
+
 }
 
 /* Media query: narrow screens (305px and under) */
