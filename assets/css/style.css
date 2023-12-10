@@ -128,9 +128,9 @@ img {
 
 #answer-box {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
+    flex-direction: column;
+    width: 100%;
+    gap: 7px;
 }
 
 .score-area {
