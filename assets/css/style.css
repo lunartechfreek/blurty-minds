@@ -317,10 +317,43 @@ img {
 
 /* Media query: mobile screens (389px and under) */
 @media screen and (max-width: 389px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    #game-box {
+        height: 80vh;
+    }
+
+    /* How to */
+    .how-to > ul {
+        font-size: 1rem;
+    }
+
+    #game-type {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    #image-border {
+        height: 207px;
+        width: 303px;
+    }
+
+    #game-image {
+        height: 192px;
+        width: 288px;
+    }
+
    .btn {
     font-size: 1.15rem;
     padding: 7px;
    }
+
+   .ctrl-btn {
+    font-size: 1.3rem;
+    }
 
    .score-area {
     margin-bottom: 10px;
