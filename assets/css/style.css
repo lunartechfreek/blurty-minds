@@ -500,8 +500,82 @@ img {
     }
 }
 
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
+/* Media query: tablets and larger (700px and up) */
+@media screen and (min-width: 700px) {
+    #game-box {
+        height: 80vh;
+        max-width: 655px;
+        max-height: 820px;
+        min-height: 775px;
+    }
+
+    /* Welcome */
+    .welcome > h2 {
+        font-size: 2.6rem;
+    }
+
+    .welcome > h3 {
+        font-size: 2.2rem;
+        width: 80%;
+    }
+
+    .ctrl-btn {
+        font-size: 2rem;
+    }
+
+    /* How to */
+    .how-to > h3 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .how-to > ul {
+        font-size: 1.4rem;
+        margin-bottom: 40px;
+    }
+
+    #game-type {
+        font-size: 2rem;
+    }
+
+    #image-border {
+        height: 385px;
+        width: 570px;
+    }
+
+    #game-image {
+        height: 370px;
+        width: 555px;
+    }
+
+    .question-box > p {
+        font-size: 1.7rem;
+    }
+
+    #answer-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .answer-btn {
+        width: 45%;
+        height: 75px;
+        font-size: 1.6rem;
+    }
+
+    .score-area > p {
+        font-size: 2.1rem;
+    }
+
+    #next-btn {
+        padding: 10px;
+        width: 150px;
+        font-size: 1.7rem;
+    }
+}
+
     /* Header */
     #brain-logo {
         height: 60px;
