@@ -335,6 +335,38 @@ img {
 }
 
 /* Media query: small tablets and larger (535px and up) */
+@media screen and (min-width: 535px) {
+    #image-border {
+        height: 270px;
+        width: 390px;
+    }
+
+    #game-image {
+        height: 255px;
+        width: 375px;
+    }
+
+    .question-box > p {
+        font-size: 1.3rem;
+    }
+
+    #answer-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .answer-btn {
+        width: 45%;
+    }
+
+    .score-area {
+        width: 80%;
+    }
+
+    .score-area > p {
+        font-size: 1.4rem;
+    }
 }
 
 /* Media query: tablets and larger (768px and up) */
