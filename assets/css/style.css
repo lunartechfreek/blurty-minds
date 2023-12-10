@@ -27,6 +27,18 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+.btn {
+    font-family: 'Fuzzy Bubbles';
+    text-transform: uppercase;
+    min-width: 100px;
+    min-height: 30px;
+    color: #000022;
+    background-color: #00D2FC;
+    padding: 10px;
+    font-size: 1.25rem;
+}
+
+
 /* Header */
 
 header {
@@ -38,7 +50,7 @@ header {
 h1 {
     font-size: 2.5rem;
     color: white;
-    margin: 20px 15px 20px 0;
+    margin: 10px 15px 20px 0;
 }
 
 #brain-logo {
@@ -63,9 +75,31 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     height: 100%;
     padding: 15px 10px;
+}
+
+.welcome > h2 {
+    font-size: 1.9rem;
+}
+
+.welcome > h3 {
+    font-size: 1.5rem;
+}
+
+#ctrl-box {
+    height: 55%;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ctrl-btn {
+    width: 80%;
+    font-size: 1.3rem;
 }
 
 .how-to {
@@ -75,11 +109,18 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+.how-to > h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
 .how-to > ul {
     list-style-type: none;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 .how-to li {
@@ -108,16 +149,16 @@ h1 {
 }
 
 #image-border {
-    height: 207px;
-    width: 303px;
+    height: 221px;
+    width: 324px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #game-image {
-    height: 192px;
-    width: 288px;
+    height: 206px;
+    width: 309px;
     overflow: hidden;
 }
 
@@ -162,15 +203,19 @@ img {
     padding: 15px 10px;
 }
 
-.btn {
-    font-family: 'Fuzzy Bubbles';
-    text-transform: uppercase;
-    min-width: 100px;
-    min-height: 30px;
-    color: #000022;
-    background-color: #00D2FC;
-    padding: 10px;
-    font-size: 1.25rem;
+.game-end > h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.game-end > h3 {
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+}
+
+#home-btn {
+    font-size: 2rem;
+    width: 60%;
 }
 
 .answer-btn {
