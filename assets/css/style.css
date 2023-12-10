@@ -403,6 +403,26 @@ img {
     width: 93%;
     }
 
+    /* Welcome */
+    .welcome > h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome > h3 {
+        font-size: 1.2rem;
+    }
+
+    /* How to */
+    .how-to > h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .how-to > ul {
+        font-size: 0.88rem;
+        margin-bottom: 10px;
+    }
+
     .question-box > p {
         font-size: 1rem;
     }
@@ -412,12 +432,20 @@ img {
         font-size: 0.9rem;
     }
 
-    .how-to > ul {
-        font-size: 0.88rem;
+    .ctrl-btn {
+        font-size: 1.05rem;
     }
 
     .score-area > p {
         font-size: 1.1rem;
+    }
+
+    .game-end > h2 {
+        font-size: 2.5rem;
+    }
+
+    .game-end > h3 {
+        font-size: 2rem;
     }
 
 }
