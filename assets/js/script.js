@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 let welcomeBox = document.getElementsByClassName('welcome')[0];
 let howToBox = document.getElementsByClassName('how-to')[0];
 let questionBox = document.getElementsByClassName('question-box')[0];
+let gameType = document.getElementById('game-type');
 let scoreBox = document.getElementsByClassName('score-area')[0];
 let scoreSpan = document.getElementById('score');
 let finalScoreSpan = document.getElementById('final-score');
@@ -59,6 +60,8 @@ function home() {
  */
 function displayAnimalQuestions() {
     runGame(animalQuestions);
+    gameType.innerText = '';
+    gameType.innerText = 'Animals';
 }
 
 /**
@@ -66,6 +69,8 @@ function displayAnimalQuestions() {
  */
 function displayLandmarkQuestions() {
     runGame(landmarkQuestions);
+    gameType.innerText = '';
+    gameType.innerText = 'Landmarks'
 }
 
 /**
