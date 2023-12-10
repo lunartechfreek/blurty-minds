@@ -724,6 +724,23 @@ img {
 
 }
 
+/* Media query: Laptops and larger (1200px and up) */
+@media screen and (min-width: 1200px) {
+    #game-box {
+        max-width: 1000px;
+        min-height: 600px;
+        margin-bottom: 50px;
+    }
+
+    #image-border {
+        height: 335px;
+        width: 495px;
+    }
+
+    #game-image {
+        height: 320px;
+        width: 480px;
+    }
 }
 
 /* Hide Class */
