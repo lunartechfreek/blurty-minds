@@ -173,7 +173,7 @@ function checkAnswer(correctAnswer, button) {
         score += seconds + 1;
         scoreSpan.innerText = score;
         //Points scored for current question
-        timer.innerHTML = `You scored ${seconds + 1}`;
+        timer.innerHTML = `You scored ${seconds + 1}!`;
         //Shows the next button
         nextButton.classList.remove('hide');
         //Stops timer when answer is correct
