@@ -643,6 +643,86 @@ img {
 
 /* Media query: Laptops and larger (992px and up) */
 @media screen and (min-width: 992px) {
+    h1 {
+        font-size: 2.2rem;
+        margin-right: 20px;
+        margin-bottom: 5px;
+    }
+
+    #brain-logo {
+        height: 60px;
+    }
+
+    /* Welcome */
+    .welcome > h2 {
+        font-size: 1.9rem;
+        margin-top: 20px;
+    }
+
+    .welcome > h3 {
+        font-size: 1.8rem;
+    }
+
+    .ctrl-btn {
+        width: 60%;
+        font-size: 1.5rem;
+    }
+
+    /* How to */
+    .how-to > ul {
+        font-size: 1.2rem;
+    }
+
+    #game-box {
+        width: 85%;
+        max-width: 900px;
+        min-height: 500px;
+    }
+
+    #game-type {
+        font-size: 1.5rem;
+    }
+
+    #image-border {
+        height: 235px;
+        width: 370px;
+    }
+
+    #game-image {
+        height: 220px;
+        width: 345px;
+    }
+
+    .question-box > p {
+        font-size: 1.3rem;
+    }
+
+    #answer-box {
+        gap: 8px;
+    }
+
+    .answer-btn {
+        height: 40px;
+        padding: 7px;
+        font-size: 1.1rem;
+        max-width: 300px;
+    }
+
+    .score-area > p {
+        font-size: 1.4rem;
+    }
+
+    #next-btn {
+        min-width: 140px;
+        font-size: 1.2rem;
+        padding: 7px;
+    }
+
+    .score-area {
+        margin-bottom: 1.5%;
+    }
+
+}
 
 }
 
