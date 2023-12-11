@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-    font-family: 'Fuzzy Bubbles';
+    font-family: 'Fuzzy Bubbles', sans-serif;
     text-transform: uppercase;
     min-width: 100px;
     min-height: 30px;
