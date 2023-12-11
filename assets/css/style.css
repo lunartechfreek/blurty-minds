@@ -778,3 +778,9 @@ img {
 .disable {
     pointer-events: none;
 }
+
+.replay-btn {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    width: 60%;
+}
