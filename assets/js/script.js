@@ -91,6 +91,9 @@ function runGame(questionArray) {
     startCountdown();
 }
 
+/**
+ * Function to reset the state of the game
+ */
 function resetGame() {
     seconds = 10;
     score = 0;
