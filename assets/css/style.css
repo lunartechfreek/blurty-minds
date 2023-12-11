@@ -36,10 +36,11 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #00D2FC;
     padding: 10px;
     font-size: 1.25rem;
-}
+    border-radius: 15px;
+    box-shadow: 0 0 3px 1.5px #007193;
+    cursor: pointer;
 
-
-/* Header */
+}/* Header */
 
 header {
     display: flex;
@@ -69,6 +70,8 @@ h1 {
     max-width: 900px;
     margin: 0 auto;
     background-color: #FCFBFF;
+    border-radius: 25px;
+    box-shadow: 0 0 30px 8px #007193;
 }
 
 .welcome {
@@ -154,18 +157,21 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
 }
 
 #game-image {
     height: 206px;
     width: 309px;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 img {
     object-fit: cover;
     height: inherit;
     width: inherit;
+    border-radius: 15px;
 }
 
 .question-box > p {
@@ -364,7 +370,6 @@ img {
    .score-area {
     margin-bottom: 10px;
    }
-
 }
 
 /* Media query: mobile screens (350px and under) */
