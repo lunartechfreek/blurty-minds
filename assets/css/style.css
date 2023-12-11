@@ -675,8 +675,14 @@ img {
     }
 
     /* How to */
+    .how-to > h3 {
+        margin-bottom: 10px;
+    }
+
     .how-to > ul {
         font-size: 1.2rem;
+        width: 90%;
+        margin-bottom: 20px;
     }
 
     #game-box {
