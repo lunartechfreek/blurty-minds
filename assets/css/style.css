@@ -697,7 +697,7 @@ img {
 
     #image-border {
         height: 235px;
-        width: 370px;
+        width: 360px;
     }
 
     #game-image {
@@ -734,6 +734,15 @@ img {
         margin-bottom: 1.5%;
     }
 
+    .ctrl-btn:hover, #home-btn:hover, #next-btn:hover {
+        color: #FCFBFF;
+        background-color: #007193;
+        box-shadow: 0 0 3px 1.5px #00D2FC;
+    }
+
+    .answer-btn:hover {
+        color: #FCFBFF;
+    }
 }
 
 /* Media query: Desktops and larger (1200px and up) */
