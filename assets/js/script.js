@@ -105,6 +105,10 @@ homeButton.addEventListener('click', function() {
     home();
 });
 
+//To replay current game
+replayAnimals.addEventListener('click', displayAnimalQuestions);
+replayLandmarks.addEventListener('click', displayLandmarkQuestions);
+
 /**
  * Function to set next question
  */
