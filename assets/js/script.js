@@ -91,6 +91,15 @@ function runGame(questionArray) {
     startCountdown();
 }
 
+function resetGame() {
+    seconds = 10;
+    score = 0;
+    shuffledQuestionIndex = 0;
+    imgBlur.style.filter = 'blur(20px)';
+    scoreSpan.innerText = '0';
+    timer.style.color = '';
+}
+
 //Code to make the next button call the reset function
 nextButton.addEventListener('click', reset);
 
