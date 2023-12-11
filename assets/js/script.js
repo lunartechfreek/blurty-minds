@@ -298,6 +298,14 @@ function startCountdown() {
         //Add countdown text to element
         timer.innerHTML = `${seconds} seconds`;
 
+        // If seconds is less than 3 change font to red
+        if (seconds < 4) {
+            timer.style.color = '#FF3030';
+        } else {
+            // Reset font colour
+            timer.style.color = '';
+        }
+
         if (seconds > 0) {
             seconds--;
             //Dynamically reduces blur by -2px
@@ -315,6 +323,8 @@ function startCountdown() {
 
     //Clears existing timer to stop overlapping
     //Placeholder text before countdown starts
+    //Reset font colour
+    timer.style.color = '';
     timer.innerHTML = 'Get Ready...';
 
     //Increments updateTimer code to run every one second
