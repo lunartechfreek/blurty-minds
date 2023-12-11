@@ -740,8 +740,7 @@ img {
     }
 
     .ctrl-btn:hover, #home-btn:hover, #next-btn:hover {
-        color: #FCFBFF;
-        background-color: #007193;
+        background-color: #4ffbdf;
         box-shadow: 0 0 3px 1.5px #00D2FC;
     }
 
