@@ -765,7 +765,7 @@ img {
         margin-bottom: 1.5%;
     }
 
-    .ctrl-btn:hover, #home-btn:hover, #next-btn:hover {
+    .ctrl-btn:hover, #home-btn:hover, #next-btn:hover, #return-home:hover {
         background-color: #4ffbdf;
         box-shadow: 0 0 3px 1.5px #00D2FC;
     }
