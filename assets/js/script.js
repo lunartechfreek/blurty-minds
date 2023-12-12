@@ -64,7 +64,7 @@ function home() {
 }
 
 /**
- * Function to display animal questions
+ * Function to run selected game
  */
 function startGame(selectedGame, selectedQuestions) {
     clearInterval(timerInterval);
