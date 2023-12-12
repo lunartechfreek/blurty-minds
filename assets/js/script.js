@@ -24,6 +24,32 @@ let replayBtn = document.getElementById('replay');
 
 let controlButtons = document.querySelectorAll('.ctrl-btn');
 
+/**
+ * Get the control button elements and add event listeners to them
+ * Set control buttons to hide and display relevent sections
+ * Run selected game
+ */
+
+controlButtons.forEach(btn => {
+  btn.addEventListener('click', function () {
+        ctrlBtnClicked(btn);
+    });
+});
+
+function ctrlBtnClicked(controlbutton) {
+    if (controlbutton.id === 'how-to-btn') {
+        welcomeBox.classList.add('hide');
+        howToBox.classList.remove('hide');
+    } else if (controlbutton.id === 'animal-btn') {
+        replayBtn.dataset.game = 'Animals';
+        startGame('Animals', animalQuestions);
+    } else if (controlbutton.id === 'landmark-btn') {
+        replayBtn.dataset.game = 'Landmarks';
+        startGame('Landmarks', landmarkQuestions);
+    } else {
+        home();
+    }
+}
 
 /**
  * Function to take you back to the
@@ -40,27 +66,13 @@ function home() {
 /**
  * Function to display animal questions
  */
-function displayAnimalQuestions() {
+function startGame(selectedGame, selectedQuestions) {
     clearInterval(timerInterval);
     resetGame();
-    runGame(animalQuestions);
+    runGame(selectedQuestions);
     gameType.innerText = '';
-    gameType.innerText = 'Animals';
-    replayAnimals.classList.remove('hide');
-    replayLandmarks.classList.add('hide');
-}
-
-/**
- * Function to display landmark questions
- */
-function displayLandmarkQuestions() {
-    clearInterval(timerInterval);
-    resetGame();
-    runGame(landmarkQuestions);
-    gameType.innerText = '';
-    gameType.innerText = 'Landmarks';
-    replayLandmarks.classList.remove('hide');
-    replayAnimals.classList.add('hide');
+    gameType.innerText = selectedGame;
+    
 }
 
 /**
