@@ -254,13 +254,13 @@ img {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
-  }
+}
   @keyframes hvr-pulse-grow {
     to {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
-  }
+}
   .hvr-pulse-grow {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -276,7 +276,7 @@ img {
     animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
-  }
+}
 
 /* Styles to make button buzz for incorrect answer */
 @-webkit-keyframes hvr-buzz {
@@ -288,7 +288,7 @@ img {
       -webkit-transform: translateX(-3px) rotate(-2deg);
       transform: translateX(-3px) rotate(-2deg);
     }
-  }
+}
 
 @keyframes hvr-buzz {
     50% {
@@ -304,7 +304,7 @@ img {
 .hvr-buzz {
     -webkit-transform: perspective(1px) translateZ(0);;
     transform: perspective(1px) translateZ(0);
-  }
+}
 
   .hvr-buzz.clicked {
     -webkit-animation-name: hvr-buzz;
@@ -315,7 +315,29 @@ img {
     animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-  }
+}
+
+/* 404 Page */
+#not-found-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 85%;
+    height: 77vh;
+    max-height: 900px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #FCFBFF;
+    border-radius: 25px;
+    box-shadow: 0 0 30px 8px #007193;
+}
+
+#not-found-box > a {
+    text-align: center;
+}
 
 /* Media query: mobile screens (415px and under) */
 @media screen and (max-width: 415px) {
