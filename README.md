@@ -59,4 +59,15 @@ I used [Contrast Grid Eight Shapes](https://contrast-grid.eightshapes.com/?versi
 
 ![Contrast Grid](documentation/contrast-grid.png)
 
+### Typography
+
+I used [Google Fonts](https://fonts.google.com/) for the fonts throughout the site. To find fonts that pair well together I used [Font Joy](https://fontjoy.com/) which is a font generator where I entered my initial chosen font and it generates fonts that compliment it. 
+
+I chose to use [Gloria Hallelujah](https://fonts.google.com/specimen/Gloria+Hallelujah?query=gloria) for the font of my main heading and also other headings. I chose this font because I feel it is almost like a child’s handwriting, and is very fun and playful and sets the tone that this is a fun game to play. 
+
+I chose to use [Fuzzy Bubbles](https://fonts.google.com/specimen/Fuzzy+Bubbles?query=fuzz) as the font to be displayed on the buttons. I feel that this font is very similar to Gloria Hallelujah but is a lot clearer to read. I decided this would be best used on the buttons as to make the users experience easier while selecting answers and to avoid any difficulty in reading the answer buttons in a fast manner to get the highest score possible. 
+
+I chose to use [Pt Sans Caption](https://fonts.google.com/specimen/PT+Sans+Caption?query=pt+sans+c) as the font for the how to section because there was going to be a lot of text there and I wanted it to be easy to take in the information without a distracting font such as the others used. I also used this font for my score and timer text for the same reason. 
+
+I used a backup font of Sans-Serif incase there was a problem loading the other fonts.
 
