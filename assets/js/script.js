@@ -1,30 +1,4 @@
-/* jshint esversion: 11, jquery: true */
-
-/**
- * Wait for the dom to finish loading before running the game
- * Get the intro button elements and add event listeners to them
- * Set intro buttons to hide and display relevent sections
- */
-document.addEventListener("DOMContentLoaded", function() {
-    let controlButtons = document.getElementsByClassName('ctrl-btn');
-
-    for (let controlbutton of controlButtons) {
-        controlbutton.addEventListener('click', function () {
-            if (controlbutton.id === 'how-to-btn') {
-                welcomeBox.classList.add('hide');
-                howToBox.classList.remove('hide');
-            } else if (controlbutton.id === 'animal-btn') {
-                displayAnimalQuestions();
-            } else if (controlbutton.id === 'landmark-btn') {
-                displayLandmarkQuestions();
-            } else {
-                home();
-            }
-            
-        });
-    }
-
-});
+/* jshint esversion: 11 */
 
 //Global variables
 let welcomeBox = document.getElementsByClassName('welcome')[0];
@@ -41,11 +15,15 @@ let gameEndBox = document.getElementsByClassName('game-end')[0];
 let homeButton = document.getElementById('home-btn');
 let seconds = 10;
 let score = 0;
+let border = document.getElementById('image-border');
+let timer = document.getElementById('timer');
 
 let shuffledQuestions, shuffledQuestionIndex;
 
-let replayAnimals = document.getElementById('replay-animals');
-let replayLandmarks = document.getElementById('replay-landmarks');
+let replayBtn = document.getElementById('replay');
+
+let controlButtons = document.querySelectorAll('.ctrl-btn');
+
 
 /**
  * Function to take you back to the
