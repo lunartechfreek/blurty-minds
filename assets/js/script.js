@@ -24,8 +24,7 @@ let replayBtn = document.getElementById('replay');
 
 let controlButtons = document.querySelectorAll('.ctrl-btn');
 
-let animalQuestions;
-let landmarkQuestions;
+
 
 /**
  * Get the control button elements and add event listeners to them
