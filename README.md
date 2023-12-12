@@ -1,6 +1,6 @@
 # BLURty Minds
 
-![Blurty Minds Preview Image](docs/readme-files/preview.png)
+![Blurty Minds Preview Image](documentation/preview.png)
 
 [Click here to view the live project](https://lunartechfreek.github.io/blurty-minds/)
 
