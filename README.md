@@ -71,3 +71,24 @@ I chose to use [Pt Sans Caption](https://fonts.google.com/specimen/PT+Sans+Capti
 
 I used a backup font of Sans-Serif incase there was a problem loading the other fonts.
 
+## User Stories
+
+### New Site Users
+
+- As a new site user, I would like to play a game, so that I can relax.
+- As a new site user, I would like to see vibrant colours, so that I can feel positive emotions while playing.
+- As a new site user, I would like to easily navigate the site, so that I can easily play the game I chose.
+- As a new site user, I would like to see the rules, so that I can understand how the game works.
+- As a new site user, I would like to challenge myself, so that I can feel productive.
+- As a new site user, I would like to have different game types, so that I can won't finish the game too fast.
+- As a new site user, I would like to see if my answer is correct or not, so that I can clearly see how I am doing.
+
+
+
+### Returning Site Users
+
+- As a returning site user, I would like to easily navigate the site, so that I can replay the game or select a different one.
+- As a returning site user, I would like to challenge myself, so that I can feel productive.
+- As a returning site user, I would like to see my score, so that I can see if im improving.
+- As a returning site user, I would like to have alot of questions, so that I can replay the game without too many repeated questions.
+
