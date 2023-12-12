@@ -57,7 +57,6 @@ function home() {
     questionBox.classList.add('hide');
     scoreBox.classList.add('hide');
     gameEndBox.classList.add('hide');
-    console.log('Home');
 }
 
 /**
@@ -195,7 +194,6 @@ function checkAnswer(correctAnswer, button) {
         disableButtons();
         //Shows image in full
         imgBlur.style.filter = "blur(0px)";
-        console.log('Correct');
         button.classList.add('correct');
         ifRight(button, border);
         //Increments and displays score 
@@ -208,7 +206,6 @@ function checkAnswer(correctAnswer, button) {
         //Stops timer when answer is correct
         clearInterval(timerInterval);
     } else {
-        console.log('Incorrect');
         button.classList.add('incorrect');
         ifWrong(button, border);
         //Penalty for incorrect selection
@@ -306,7 +303,6 @@ function reset() {
         scoreBox.classList.add('hide');
         //Displays score on game end 
         finalScoreSpan.innerText = score;
-        console.log('Game Over');
     }
 }
 
