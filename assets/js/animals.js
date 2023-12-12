@@ -1,6 +1,6 @@
 /* jshint esversion: 11 */
 
-// Game Questions 
+// Animal Questions
 let animalQuestions = [
     {
         imageSrc: 'assets/images/animals/chameleon.webp',

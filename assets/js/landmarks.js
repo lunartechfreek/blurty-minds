@@ -1,5 +1,6 @@
 /* jshint esversion: 11 */
 
+// Landmark Questions
 let landmarkQuestions = [
     {
         imageSrc: 'assets/images/landmarks/arc-de-triomphe.webp',
