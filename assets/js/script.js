@@ -109,6 +109,7 @@ function resetGame() {
 //Code to make the next button call the reset function
 nextButton.addEventListener('click', reset);
 
+// Code to reset game when the home button is clicked
 homeButton.addEventListener('click', function() {
     if (timerInterval) {
         clearInterval(timerInterval);
