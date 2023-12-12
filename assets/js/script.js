@@ -153,6 +153,7 @@ function populateAnswerButtons(question) {
     }
 
     //Displays answers on buttons
+    question.answers.sort(() => Math.random() - 0.5);
     question.answers.forEach((answer, index) => {
         const button = answerButtons[index];
         button.textContent = answer.text;
