@@ -1,3 +1,5 @@
+/* jshint esversion: 11, jquery: true */
+
 /**
  * Wait for the dom to finish loading before running the game
  * Get the intro button elements and add event listeners to them
@@ -32,7 +34,6 @@ let gameType = document.getElementById('game-type');
 let scoreBox = document.getElementsByClassName('score-area')[0];
 let scoreSpan = document.getElementById('score');
 let finalScoreSpan = document.getElementById('final-score');
-let questionImage = document.getElementById('game-image');
 let imgBlur = document.getElementById('img-blur');
 let answerButtons = document.querySelectorAll('.answer-btn');
 let nextButton = document.getElementById('next-btn');
@@ -80,7 +81,7 @@ function displayLandmarkQuestions() {
     resetGame();
     runGame(landmarkQuestions);
     gameType.innerText = '';
-    gameType.innerText = 'Landmarks'
+    gameType.innerText = 'Landmarks';
     replayLandmarks.classList.remove('hide');
     replayAnimals.classList.add('hide');
 }
@@ -165,7 +166,7 @@ function populateAnswerButtons(question) {
     //Displays answers on buttons
     question.answers.forEach((answer, index) => {
         const button = answerButtons[index];
-        button.textContent = answer.text
+        button.textContent = answer.text;
         
         //Add dataset attribute
         button.dataset.correct = answer.correct;
@@ -226,10 +227,10 @@ let border = document.getElementById('image-border');
  */
 function ifRight(button, border) {
     button.classList.add('selected');
-    border.classList.add('correct')
+    border.classList.add('correct');
         setTimeout(() => {
             button.classList.remove('selected');
-            border.classList.remove('correct')
+            border.classList.remove('correct');
           }, 1000);
 }
 
@@ -239,10 +240,10 @@ function ifRight(button, border) {
  */
 function ifWrong(button, border) {
     button.classList.add('clicked');
-    border.classList.add('incorrect')
+    border.classList.add('incorrect');
         setTimeout(() => {
             button.classList.remove('clicked');
-            border.classList.remove('incorrect')
+            border.classList.remove('incorrect');
           }, 700);
 }
 
@@ -586,16 +587,7 @@ let animalQuestions = [
             { text: 'Butterfly', correct: true }
         ]
     }
-    /*{
-        imageSrc: 'assets/images/animals/.webp',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false }
-        ]
-    }*/
-]
+];
 
 let landmarkQuestions = [
     {
@@ -822,43 +814,5 @@ let landmarkQuestions = [
             { text: 'Radio City Sign', correct: false },
             { text: 'Kings Cross Sign', correct: false }
         ]
-    },
-    /*{
-        imageSrc: '',
-        answers: [
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: false },
-            { text: '', correct: false },
-            { text: '', correct: true }
-        ]
-    },*/
-    
-    
-]
+    }
+];
