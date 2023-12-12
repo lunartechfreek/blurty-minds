@@ -120,8 +120,14 @@ homeButton.addEventListener('click', function() {
 });
 
 //To replay current game
-replayAnimals.addEventListener('click', displayAnimalQuestions);
-replayLandmarks.addEventListener('click', displayLandmarkQuestions);
+replayBtn.addEventListener('click', function() {
+    let replayGameType = this.dataset.game;
+    if (replayGameType == 'Animals') {
+        startGame(replayGameType, animalQuestions);
+    } else if (replayGameType == 'Landmarks') {
+        startGame(replayGameType, landmarkQuestions);
+    }
+});
 
 /**
  * Function to set next question
@@ -207,8 +213,6 @@ function checkAnswer(correctAnswer, button) {
     }
 }
 
-let border = document.getElementById('image-border');
-
 /**
  * Function to make button grow and border to
  * turn green on correct answer for short time
@@ -266,7 +270,6 @@ function resetButtons() {
     }
 }
 
-
 /**
  * Function to reset everything for next question
  */
@@ -296,8 +299,6 @@ function reset() {
         finalScoreSpan.innerText = score;
     }
 }
-
-let timer = document.getElementById('timer');
 
 let timerInterval;
 /**
