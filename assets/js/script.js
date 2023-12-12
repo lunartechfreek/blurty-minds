@@ -26,16 +26,17 @@ let controlButtons = document.querySelectorAll('.ctrl-btn');
 
 /**
  * Get the control button elements and add event listeners to them
- * Set control buttons to hide and display relevent sections
- * Run selected game
  */
-
 controlButtons.forEach(btn => {
   btn.addEventListener('click', function () {
         ctrlBtnClicked(btn);
     });
 });
 
+/**
+ * Set control buttons to hide and display relevent sections
+ * Run selected game
+ */
 function ctrlBtnClicked(controlbutton) {
     if (controlbutton.id === 'how-to-btn') {
         welcomeBox.classList.add('hide');
