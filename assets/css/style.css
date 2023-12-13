@@ -143,6 +143,7 @@ h1 {
     align-items: center;
     justify-content: space-evenly;
     width: 90%;
+    margin-bottom: 10px;
 }
 
 #game-type {
@@ -210,6 +211,8 @@ img {
     padding: 5px 20px;
     min-width: 0;
     min-height: 40px;
+    display: flex;
+    align-items: center;
 }
 
 #restart-btn > img {
@@ -625,10 +628,18 @@ img {
         font-size: 2.1rem;
     }
 
+    #restart-btn {
+        min-height: 58px;
+    }
+
+    #restart-btn > img {
+        height: 30px;
+    }
+
     #next-btn {
         padding: 10px;
-        width: 150px;
         font-size: 1.7rem;
+        min-height: 58px;
     }
 }
 
@@ -689,10 +700,18 @@ img {
         font-size: 2.5rem;
     }
 
+    #restart-btn {
+        min-height: 72px;
+    }
+
+    #restart-btn > img {
+        height: 35px;
+    }
+
     #next-btn {
-        min-width: 180px;
         font-size: 2.2rem;
         padding: 12px;
+        min-height: 72px;
     }
 
 }
@@ -774,17 +793,25 @@ img {
         font-size: 1.4rem;
     }
 
+    #restart-btn {
+        min-height: 40px;
+    }
+
+    #restart-btn > img {
+        height: 25px;
+    }
+
     #next-btn {
-        min-width: 140px;
         font-size: 1.2rem;
         padding: 7px;
+        min-height: 40px;
     }
 
     .score-area {
         margin-bottom: 1.5%;
     }
 
-    .ctrl-btn:hover, #home-btn:hover, #next-btn:hover, #return-home:hover {
+    .ctrl-btn:hover, #home-btn:hover, #next-btn:hover, #return-home:hover, #restart-btn:hover {
         background-color: #4ffbdf;
         box-shadow: 0 0 3px 1.5px #00D2FC;
     }
