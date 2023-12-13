@@ -10,6 +10,7 @@ let scoreSpan = document.getElementById('score');
 let finalScoreSpan = document.getElementById('final-score');
 let imgBlur = document.getElementById('img-blur');
 let answerButtons = document.querySelectorAll('.answer-btn');
+let restartButton = document.getElementById('restart-btn');
 let nextButton = document.getElementById('next-btn');
 let gameEndBox = document.getElementsByClassName('game-end')[0];
 let homeButton = document.getElementById('home-btn');
@@ -108,6 +109,11 @@ function resetGame() {
     timer.style.color = '';
 }
 
+// Code to restart the game
+restartButton.addEventListener('click', function() {
+    location.reload();
+});
+
 //Code to make the next button call the reset function
 nextButton.addEventListener('click', reset);
 
@@ -203,7 +209,7 @@ function checkAnswer(correctAnswer, button) {
         //Points scored for current question
         timer.innerHTML = `You scored ${seconds + 1}!`;
         //Shows the next button
-        nextButton.classList.remove('hide');
+        nextButton.classList.remove('hidden');
         //Stops timer when answer is correct
         clearInterval(timerInterval);
     } else {
@@ -282,7 +288,7 @@ function reset() {
     imgBlur.style.filter = "blur(20px)";
     resetButtons();
     enableButtons();
-    nextButton.classList.add('hide');
+    nextButton.classList.add('hidden');
     //Clears timer
     clearInterval(timerInterval);
     startCountdown();
@@ -338,7 +344,7 @@ function startCountdown() {
             timer.innerHTML = "0 points scored!";
             //Shows full image when timer runs out
             imgBlur.style.filter = `blur(0px)`;
-            nextButton.classList.remove('hide');
+            nextButton.classList.remove('hidden');
         }
     }
 
