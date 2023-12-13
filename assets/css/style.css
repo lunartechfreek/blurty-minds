@@ -206,6 +206,23 @@ img {
     font-size: 1.2rem;
 }
 
+#restart-btn {
+    padding: 5px 20px;
+    min-width: 0;
+    min-height: 40px;
+}
+
+#restart-btn > img {
+    height: 20px;
+    border-radius: 0;
+}
+
+#next-btn {
+    min-width: 0;
+    min-height: 40px;
+    padding: 7px 10px;
+}
+
 .game-end {
     display: flex;
     flex-direction: column;
@@ -796,9 +813,13 @@ img {
     }
 }
 
-/* Hide Class */
+/* Hide Classes */
 .hide {
     display: none;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 /* Disables the buttons */
