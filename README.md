@@ -92,3 +92,149 @@ I used a backup font of Sans-Serif incase there was a problem loading the other 
 - As a returning site user, I would like to see my score, so that I can see if im improving.
 - As a returning site user, I would like to have alot of questions, so that I can replay the game without too many repeated questions.
 
+## Features
+
+### Existing Features
+
+- **Game Box**
+
+    - I wanted to make the site for the game as simple as possible. I felt the best way to do this would be to have only one page for the site. To make this work I created my game box on the page and then I used javascript to make this box function in a way that the user never feels the need to leave the box or the page. I used javascript to create three main sections to my game, and then hide and display the correct sections dependant on the event listeners that are triggered.  This also adheres to the user story regarding easy site navigation. 
+
+![Game Box](documentation/game-box.png)
+
+- **Logo**
+
+    - I wanted to make the home page easily accessible at all times so chose to make the logo at the top of the page a constant throughout the game but also to be a link to the home page to refresh the page and go back to the welcome section at the start no matter what is happening inside the game box. This allows the user to easily navigate back to the start at all times. 
+
+
+![Logo](documentation/logo.png)
+
+- **Selection Of Games**
+
+    - I decided to add two different game types each with their own list of questions and answers to adhere to the returning user stories and encourage them to revisit the site to play the game again. As well as the two game types I decided to add a lot more questions than is displayed to the user and used javascript to shuffle these questions so that the user will get a random set of questions each time the game is run.
+
+![Game Selection](documentation/game-selection.png)
+
+
+- **Control Buttons**
+
+    - To allow for easy site navigation I wanted there to be clear buttons displayed on the welcome section as soon as the page is loaded. This gives the user the options they require instantly without having to navigate their way to the game. It also gives the ability to load the users chosen game with one simple click so they can jump straight in. 
+
+![Control Buttons](documentation/control-buttons.png)
+
+- **Hover Styles**
+
+    - I wanted to enhance the users experience with the site on larger screens with a width above 992px. I did this by making it more interactive by adding a hover class to the control buttons. This changes the background colour of the button when it is hovered over. This shows the user clearly which option they are about to click on before they select it also. I also kept in mind my user stories and decided to use a vibrant colour to be displayed.
+
+![Hover Class](documentation/hover.png)
+
+- **How To**
+
+    - The how to section was designed inside of the game box and showcases the use of javascript through the use of hiding and displaying certain sections without the user having to leave the page. This also has a button to return to the home page and allows for easy navigation of the site. This section adheres to the user stories by giving the user an easy way to find the rules of the game and easily navigate back to the home section. 
+
+![How To Section](documentation/how-to.png)
+
+- **Dynamic Game Title**
+
+    - I have placed the title of the chosen game at the top of the game box. I have used javascript to create this as a dynamic element. This means that only the title of the game being played will be shown. The user will also find this feature very useful if they forget, as with the pictures being blurred throughout the game it will serve as a reminder as to what they are aiming to find in the picture. 
+
+![Animal Game Type](documentation/game-type-animals.png)
+
+![Landmark Game Type](documentation/game-type-landmarks.png)
+
+- **Blurred Image**
+
+    - This is the main element of my game. I have added a blur effect to the picture, and with every second the image gets less blurry. I have done this through the use of javascript by reducing the blur effect with every second that passes by targeting the style in my code for my countdown.  
+
+![Blurred Image](documentation/blurry-img.png)
+
+- **Show Full Image**
+
+    - Another feature regarding the image is that when the user guesses the correct answer the whole image is shown to the user with no blur on it. I did this to almost reward and give the user the satisfaction after slowly watching blurring less with each second that passes. 
+
+![Reveal Full Image](documentation/reveal-image.png)
+
+- **Timer**
+
+    - Underneath the image I added a dynamic timer element. This timer counts down from 10 seconds live infront of the user while the game is running. I did this by using javascript and setting the inner HTML of the element.
+
+![Timer](documentation/timer.png)
+
+- **Timer Font Colour Change**
+
+    - I wanted to emphasise the fact that the countdown is nearly over when there is less than three seconds remaining on the timer. This was to to make the user realise they need to hurry up to pick an answer before they score no points. This was done by targeting the font colour within an `if` statement within my timer. 
+
+![Timer Colour Change](documentation/red-timer.png)
+
+- **Points Scored For Question**
+
+    - When the user answered the question correctly I wanted to replace the timer feature with points scored, as the game will pause when the correct answer is chosen. I did that by using javascript and setting the inner HTML of the element to temporarily display the points scored until the next button is clicked. 
+
+![Question Points Scored](documentation/question-score.png)
+
+- **Answer Buttons**
+
+    - I chose to have answer buttons rather than a text input box to make the users experience more enjoyable and to focus more on the game rather than checking spelling mistakes etc. I created a function that adds the answers from the array to the corresponding question. I also added code to shuffle where the answers are displayed every time they are displayed so the returning users won’t remember where they are. I also added a different hover class for the answer buttons so as to still display the correct and incorrect class colours. 
+
+![Answer Buttons](documentation/answer-buttons.png)
+
+- **Correct/Incorrect Answer**
+
+    - I added two different classes of correct and incorrect. One of these would be assigned as the background colour on the button depending on if the answer they chose was correct or not. I used javascript and the dataset feature to determine the correct answer and then add the class to the button which was clicked on. 
+
+![Correct Answer](documentation/correct-button.png)
+
+![Incorrect Answer](documentation/incorrect-button.png)
+
+- **Correct/Incorrect Other Features**
+
+    - I wanted to emphasise the correct and incorrect features even further to enable the user to clearly notice the games reaction to their answer selection. This also enhances the users experience by adding further interactivity to the game. I used javascript to add these features. I made a border around my game image that is normally hidden but as soon as the user clicks on an answer it will either turn red or green for a set period of time. 
+    - As well as this I also added different behaviours from the buttons when they are clicked. If the answer is correct the button will pulse and grow. If the answer is incorrect the button will buzz further showing the user the reaction to their answer. 
+
+![Correct Features](documentation/correct.png)
+
+![Incorrect Features](documentation/incorrect.png)
+
+- **Restart Button**
+
+    - There is a restart button displayed at the bottom of the game at all times. I added this button so if the user wanted to start again they could click this button at any time. This further enhances the navigation of the game because with their being only one page I did not want the user to feel stuck once they were playing. 
+
+![Restart Button](documentation/game-restart.png)
+
+- **Score**
+
+    - I have added a score tally at the bottom of the page which keeps track of the users total score throughout the game. I added this feature so the user would know how well they were doing throughout the game at all times. I made this feature using javascript through use of functions that make the timer stop when the user clicks the correct answer. Whatever time is remaining is then taken as an integer and added to the score element.
+
+![Total Score](documentation/total-score.png)
+
+- **Next Button**
+
+    - I have featured a next button at the bottom of the page to go to the next question when the user has given a correct answer. I used javascript to add functionality to this button. I have made hidden until the correct answer is clicked so the user can not skip through the questions. I decided to add this button rather than automatically going the the next question because due to the nature of the game the user may want to inspect the picture further in their own time before moving on to the next question. 
+
+![Next Button](documentation/next-button.png)
+
+- **Game End**
+
+    - The game end section was designed inside of the game box and showcases the use of javascript through the use of hiding and displaying certain sections without the user having to leave the page. This also has a restart button and a home button so allows for easy navigation of the game. It also features the final score that the user scored. 
+
+![Game End](documentation/game-end.png)
+
+- **Final Score**
+
+    - The final score is displayed on the game end section at the end of the game. The score is displayed through the use of javascript functions to take the score that was set in the total score section and also display in on this page with a different text to further emphasise to the user it is the end of the game. 
+
+![Final Score](documentation/final-score.png)
+
+- **End Of Game Buttons**
+
+    - I added the end of game buttons to add easy navigation for the user. With the game featuring solely on one page these buttons allow the user to either replay the same game type that they were just playing or return back to the welcome section to either change game type or possibly read the how to section. I used javascript to add functionality to these buttons. For the replay button I made the button check which game was being played and then adding the correct event listener to the button to either display the animals or landmarks questions. For the home button I used javascript to hide and display certain sections.
+
+![Game End Buttons](documentation/end-buttons.png)
+
+- **404 Page**
+
+    - I added a 404 page to the website so that if I user enters the wrong address they will be redirected to the sites 404 page rather than the default browsers. I did this so that the user would realise that they are on the correct website and that they just tried to find a page the does not exist. I added a home button so the user could easily navigate their way back to the main site. 
+
+![screenshot](documentation/404-page.png)
+
+### Future Features
