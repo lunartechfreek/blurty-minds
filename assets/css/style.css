@@ -271,6 +271,8 @@ img {
 }
 
 /* Styles to make button grow for correct answer */
+/* Code taken from Hover.Css */
+/* https://ianlunn.github.io/Hover/ */
 @-webkit-keyframes hvr-pulse-grow {
     to {
       -webkit-transform: scale(1.1);
@@ -301,6 +303,8 @@ img {
 }
 
 /* Styles to make button buzz for incorrect answer */
+/* Code taken from Hover.Css */
+/* https://ianlunn.github.io/Hover/ */
 @-webkit-keyframes hvr-buzz {
     50% {
       -webkit-transform: translateX(3px) rotate(2deg);
