@@ -238,3 +238,17 @@ I used a backup font of Sans-Serif incase there was a problem loading the other 
 ![screenshot](documentation/404-page.png)
 
 ### Future Features
+
+In the future I plan to add more features to this game. These future developments would be as follows:
+
+- **Different Game Types**
+    - I would add different game types for a variety of different topics such as celebrities etc. 
+
+- **Adults Only Game**
+    - I would add an 18+ section of images that look like things they shouldn’t, but are innocent in reality. For this section I would require the users date of birth and use javascript to check they are old enough to enter this section. 
+
+- **User Feedback**
+    - I would add text to the game end section to give the user feedback on their score. To implement this by testing the game with many users and using the data I would determine what is a good, bad, and average score. The game would then check the users score and give the user feedback such as `"well done"` or `"better luck next time"` for example. 
+
+- **Image Distortion**
+    - I would add different ways to distort the image such as tiles that reduce by one with every second that passes for example. 
