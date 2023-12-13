@@ -318,3 +318,23 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
+## Credits
+
+I used various resources for content throughout the site. These are listed below in more detail. 
+
+### Content
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
+| [YouTube](https://www.youtube.com/watch?v=riDzcEQbX6k) | Game | Code to shuffle questions, code for displaying next question |
+| [ChatGPT](https://chat.openai.com/auth/login) | Game | Code for displaying answers, starter code for timer before modified, used for some bug/syntax fixes |
+| [Hover.Css](https://ianlunn.github.io/Hover/) | Game | Code taken for buzz and pulse grow button features |
+| [W3Schools](https://www.w3schools.com/cssref/css3_pr_filter.php) | Game | How to blur the image |
+| [W3Schools](https://www.w3schools.com/css/css3_transitions.asp) | Game | How to make the blur effect a smooth transition |
+| [W3Schools](https://www.w3schools.com/java/java_foreach_loop.asp) | Game | Guidance for `forEach` loop |
+| [W3Schools](https://www.w3schools.com/jsref/prop_text_placeholder.asp) | Game | Guidance for placeholder text |
+| [W3Schools](https://www.w3schools.com/cssref/css3_pr_pointer-events.php) | Game | Guidance for pointer events to disable buttons |
+| [W3Schools](https://www.w3schools.com/jsref/met_win_settimeout.asp) | Game | Guidance for setTimout function |
+| [W3Schools](https://www.w3schools.com/cssref/pr_class_visibility.php) | Game | Guidance on visibility property |
+
