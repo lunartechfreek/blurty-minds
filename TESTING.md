@@ -35,3 +35,33 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 | quiz.js | ![Animal Questions](documentation/TESTING-files/validation/jshint-animal.png) | Pass: Errors due to unused variables from external files |
 | quiz.js | ![Landmark Questions](documentation/TESTING-files/validation/jshint-landmarks.png) | Pass: Errors due to unused variables from external files |
 
+## Manual Testing
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+
+As well as testing on real world devices I wanted to test on other devices that I could not access. For this i used [BrowserStack](https://www.browserstack.com/). I tested the the website on various mobile and tablet devices, and also various mobile browsers on these devices. 
+
+### Browser Testing
+
+| Browser | Home | Notes |
+| --- | --- | --- |
+| Chrome | ![Chrome Browser](documentation/TESTING-files/browser-chrome.png) | Works as expected |
+| Edge | ![Edge Browser](documentation/TESTING-files/browser-edge.png) | Works as expected |
+| Firefox | ![Firefox Browser](documentation/TESTING-files/browser-firefox.png) | Works as expected |
+| Opera | ![Opera Browser](documentation/TESTING-files/browser-opera.png) | Works as expected |
+| Safari | ![Safari Browser](documentation/TESTING-files/browser-safari.png) | Works as expected |
+
+### Device Browser Testing
+
+| Device | Browser | Home | Notes |
+| --- | --- | --- | --- |
+| Iphone 15 ProMax | Safari | ![Iphone 15 ProMax](documentation/TESTING-files/iphone-15-promax-safari.png) | Works as expected - Manual test |
+| Iphone 13 ProMax | Safari | ![Iphone 13 ProMax](documentation/TESTING-files/mobile-iphone-13-pro-max-safari.png) | Works as expected |
+| Iphone 12 Pro | Chrome | ![Iphone 12 Pro](documentation/TESTING-files/mobile-iphone-12-pro-chrome.png) | Works as expected |
+| Samsung Galaxy S22 Ultra | Safari | ![Samsung Galaxy S22 Ultra](documentation/TESTING-files/samsung-galaxy-s22-ultra-chrome.png) | Works as expected - Manual test |
+| Google Pixel 8 Pro | Edge | ![Pixel 8 Pro](documentation/TESTING-files/mobile-pixel-8-pro-edge.png) | Works as expected |
+| Google Pixel 7 | Chrome | ![Pixel 7](documentation/TESTING-files/mobile-pixel-7-chrome.png) | Works as expected |
+| Huawei P30 | Chrome | ![Huawei P30](documentation/TESTING-files/mobile-huawei-p30-chrome.png) | Works as expected |
+| Oneplus 9 | Firefox | ![Oneplus 9](documentation/TESTING-files/mobile-oneplus-9-firefox.png) | Works as expected |
+| Ipad 10th Gen | Safari | ![Ipad 10th Gen](documentation/TESTING-files/tablet-ipad-10.png) | Works as expected |
+
