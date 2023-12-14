@@ -90,6 +90,12 @@ I used a backup font of Sans-Serif incase there was a problem loading the other 
 - As a returning site user, I would like to see my score, so that I can see if im improving.
 - As a returning site user, I would like to have alot of questions, so that I can replay the game without too many repeated questions.
 
+### Site Administrator Goals
+
+- As a site administrator, I should be able to provide a fun and vibrant game, so that I can make the users have a happy experience.
+- As a site administrator, I should be able to provide mulitple games, so that I can encourage the user to return to play again.
+- As a site administrator, I should be able to provide more questions than are asked, so that I can get the user to return to play again.
+
 ## Wireframes
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
