@@ -378,6 +378,10 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
+### Local VS Deployment
+
+There were no major differences that I found between Codeanywhere and the live deployed GitHub Pages.
+
 ## Credits
 
 I used various resources for content throughout the site. These are listed below in more detail. 
@@ -409,9 +413,6 @@ I used various resources for content throughout the site. These are listed below
 | [Font Joy](https://fontjoy.com/ ) | Entire Site | Font | Used for font pairing |
 | [Font Icon](https://gauger.io/fonticon/) | Entire Site | Image | Used for icons and favicon |
 | [Contrast Grid Eight Shapes](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFFFFF%2C%20White%0D%0A%23F2F2F2%0D%0A%23DDDDDD%0D%0A%23CCCCCC%0D%0A%23888888%0D%0A%23404040%2C%20Charcoal%0D%0A%23000000%2C%20Black%0D%0A%232F78C5%2C%20Effective%20on%20Extremes%0D%0A%230F60B6%2C%20Effective%20on%20Lights%0D%0A%23398EEA%2C%20Ineffective%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) | Entire Site | Colour | hero image background |
-| []() | home page | image | hero image background |
-| []() | home page | image | hero image background |
-
 
 ### Acknowledgements
 
