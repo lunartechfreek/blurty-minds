@@ -83,14 +83,74 @@ I used a backup font of Sans-Serif incase there was a problem loading the other 
 - As a new site user, I would like to have different game types, so that I can won't finish the game too fast.
 - As a new site user, I would like to see if my answer is correct or not, so that I can clearly see how I am doing.
 
-
-
 ### Returning Site Users
 
 - As a returning site user, I would like to easily navigate the site, so that I can replay the game or select a different one.
 - As a returning site user, I would like to challenge myself, so that I can feel productive.
 - As a returning site user, I would like to see my score, so that I can see if im improving.
 - As a returning site user, I would like to have alot of questions, so that I can replay the game without too many repeated questions.
+
+## Wireframes
+
+To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
+I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+
+### Mobile Wireframes
+
+<details>
+<summary> Click here to see the Mobile Wireframes </summary>
+
+Welcome
+  - ![Mobile Welcome](documentation/wireframes/mobile-welcome.png)
+
+How To
+  - ![Mobile How To](documentation/wireframes/mobile-how-to.png)
+
+Question Area
+  - ![Mobile Question Area](documentation/wireframes/mobile-question.png)
+
+Game End
+  - ![Mobile Game End](documentation/wireframes/mobile-game-end.png)
+
+</details>
+
+### Tablet Wireframes
+
+<details>
+<summary> Click here to see the Tablet Wireframes </summary>
+
+Welcome
+  - ![Tablet Welcome](documentation/wireframes/tablet-welcome.png)
+
+How To
+  - ![Tablet How To](documentation/wireframes/tablet-how-to.png)
+
+Question Area
+  - ![Tablet Question Area](documentation/wireframes/tablet-question.png)
+
+Game End
+  - ![Tablet Game End](documentation/wireframes/tablet-game-end.png)
+
+</details>
+
+### Desktop Wireframes
+
+<details>
+<summary> Click here to see the Desktop Wireframes </summary>
+
+Welcome
+  - ![Desktop Welcome](documentation/wireframes/desktop-welcome.png)
+
+How To
+  - ![Desktop How To](documentation/wireframes/desktop-how-to.png)
+
+Question Area
+  - ![Desktop Question Area](documentation/wireframes/desktop-question.png)
+
+Game End
+  - ![Desktop Game End](documentation/wireframes/desktop-game-end.png)
+
+</details>
 
 ## Features
 
