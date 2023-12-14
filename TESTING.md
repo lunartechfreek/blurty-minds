@@ -65,3 +65,31 @@ As well as testing on real world devices I wanted to test on other devices that 
 | Oneplus 9 | Firefox | ![Oneplus 9](documentation/TESTING-files/mobile-oneplus-9-firefox.png) | Works as expected |
 | Ipad 10th Gen | Safari | ![Ipad 10th Gen](documentation/TESTING-files/tablet-ipad-10.png) | Works as expected |
 
+## Responsiveness
+
+I've tested my deployed project on multiple devices to check for responsiveness issues. Some of these were done with a manual test, others were done using either [BrowserStack](https://www.browserstack.com/) or [Chrome DevTools](https://developer.chrome.com/docs/devtools).
+
+| Device | Home | Notes | Test |
+| --- | --- | --- | --- |
+| Iphone 15 ProMax | ![Iphone 15 ProMax](documentation/TESTING-files/iphone-15-promax-safari.png) | Works as expected | Manual test |
+| Iphone 13 ProMax | ![Iphone 13 ProMax](documentation/TESTING-files/mobile-iphone-13-pro-max-safari.png) | Works as expected | Browserstack test |
+| Iphone 12 Pro | ![Iphone 12 Pro](documentation/TESTING-files/mobile-iphone-12-pro-chrome.png) | Works as expected | Browserstack test |
+| Iphone SE | ![Iphone SE](documentation/TESTING-files/iphone-se.png) | Works as expected | Chrome DevTools test |
+| Iphone XR | ![Iphone XR](documentation/TESTING-files/iphone-xr.png) | Works as expected | Chrome DevTools test |
+| Samsung Galaxy S22 Ultra | ![Samsung Galaxy S22 Ultra](documentation/TESTING-files/samsung-galaxy-s22-ultra-chrome.png) | Works as expected | Manual test |
+| Google Pixel 8 Pro | ![Pixel 8 Pro](documentation/TESTING-files/mobile-pixel-8-pro-edge.png) | Works as expected | Browserstack test |
+| Google Pixel 7 | ![Pixel 7](documentation/TESTING-files/mobile-pixel-7-chrome.png) | Works as expected | Browserstack test |
+| Google Pixel 5 | ![Google Pixel 5](documentation/TESTING-files/pixel-5.png) | Works as expected | Chrome DevTools test |
+| Samsung Galaxy Fold | ![Samsung Galaxy Fold](documentation/TESTING-files/samsung-galaxy-fold.png) | Works as expected | Chrome DevTools test |
+| Samsung Galaxy S8+ | ![Samsung Galaxy S8+](documentation/TESTING-files/samsung-galaxy-s8+.png) | Works as expected | Chrome DevTools test |
+| Samsung Galaxy S20 Ultra | ![Samsung Galaxy S20 Ultra](documentation/TESTING-files/samsung-galaxy-s20-ultra.png) | Works as expected | Chrome DevTools test |
+| Samsung Galaxy A51/71 | ![Samsung Galaxy A51/71](documentation/TESTING-files/samung-galaxy-a51-71.png) | Works as expected | Chrome DevTools test |
+| Samsung Galaxy A22 | ![Samsung Galaxy A22](documentation/TESTING-files/samsung-a22.png) | Works as expected | Manual Test |
+| Huawei P30 | ![Huawei P30](documentation/TESTING-files/mobile-huawei-p30-chrome.png) | Works as expected | Browserstack test |
+| Oneplus 9 | ![Oneplus 9](documentation/TESTING-files/mobile-oneplus-9-firefox.png) | Works as expected | Browserstack test |
+| Ipad 10th Gen | ![Ipad 10th Gen](documentation/TESTING-files/tablet-ipad-10.png) | Works as expected | Browserstack test |
+| Ipad Air | ![Ipad Air](documentation/TESTING-files/ipad-air.png) | Works as expected | Chrome DevTools test |
+| Ipad Mini | ![Ipad Mini](documentation/TESTING-files/ipad-mini.png) | Works as expected | Chrome DevTools test |
+| Microsoft Surface Duo | ![Microsoft Surface Duo](documentation/TESTING-files/microsoft-surface-duo.png) | Works as expected | Chrome DevTools test |
+| Microsoft Surface Pro 7 | ![Microsoft Surface Pro 7](documentation/TESTING-files/microsoft-surface-pro-7.png) | Works as expected | Chrome DevTools test |
+
