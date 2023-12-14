@@ -34,11 +34,11 @@ I wanted to stick with the theme of blue so also used a very dark Oxford blue fo
 
 The colours used in my main colour palette are:
 
-* #FCFBFF - Ghost White
-* #00D2FC - Aquamarine
-* #4FFBDF - Vivid Sky Blue
-* #007193 - Cerulean
-* #000022 - Oxford Blue 
+- `#FCFBFF` - Ghost White
+- `#00D2FC` - Aquamarine
+- `#4FFBDF` - Vivid Sky Blue
+- `#007193` - Cerulean
+- `#000022` - Oxford Blue 
 
 ![Colour Palette](documentation/colour-palette.png)
 
@@ -48,8 +48,8 @@ I again used [Coolers](https://coolors.co/) to help me achieve this. I started b
 
 The colours I chose were:
 
-* #OAE240 - Malachite
-* #FF3030 - Vermillion
+- `#OAE240` - Malachite
+- `#FF3030` - Vermillion
 
 ![Other Colours](documentation/correct-incorrect.png)
 
@@ -384,7 +384,7 @@ I used various resources for content throughout the site. These are listed below
 
 ### Content
 
-| Source | Location | Notes |
+| Source | Location | Notes | 
 | --- | --- | --- |
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [YouTube](https://www.youtube.com/watch?v=riDzcEQbX6k) | Game | Code to shuffle questions, code for displaying next question |
@@ -397,4 +397,26 @@ I used various resources for content throughout the site. These are listed below
 | [W3Schools](https://www.w3schools.com/cssref/css3_pr_pointer-events.php) | Game | Guidance for pointer events to disable buttons |
 | [W3Schools](https://www.w3schools.com/jsref/met_win_settimeout.asp) | Game | Guidance for setTimout function |
 | [W3Schools](https://www.w3schools.com/cssref/pr_class_visibility.php) | Game | Guidance on visibility property |
+
+### Media
+
+| Source | Location | Type | Notes |
+| --- | --- | --- | --- |
+| [Pexels](https://www.pexels.com) | Game | Image | Used for stock images |
+| [TinyPNG](https://tinypng.com) | Entire site | Image | Tool for image compression |
+| [Coolers](https://coolors.co/) | Entire Site | Colour | Used for colour palette |
+| [ColorSpace](https://mycolor.space) | Entire Site | Colour | Background Gradient Generator |
+| [Font Joy](https://fontjoy.com/ ) | Entire Site | Font | Used for font pairing |
+| [Font Icon](https://gauger.io/fonticon/) | Entire Site | Image | Used for icons and favicon |
+| [Contrast Grid Eight Shapes](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFFFFF%2C%20White%0D%0A%23F2F2F2%0D%0A%23DDDDDD%0D%0A%23CCCCCC%0D%0A%23888888%0D%0A%23404040%2C%20Charcoal%0D%0A%23000000%2C%20Black%0D%0A%232F78C5%2C%20Effective%20on%20Extremes%0D%0A%230F60B6%2C%20Effective%20on%20Lights%0D%0A%23398EEA%2C%20Ineffective%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) | Entire Site | Colour | hero image background |
+| []() | home page | image | hero image background |
+| []() | home page | image | hero image background |
+
+
+### Acknowledgements
+
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
+- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support.
+- I would like to thank my partner (Charlotte), for believing in me, and allowing me to make this transition into software development.
 
