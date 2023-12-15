@@ -29,11 +29,11 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 | File | Screenshot | Notes |
 | --- | --- | --- |
 | script.js | ![Main Javascript File](documentation/TESTING-files/validation/jshint-errors-first.png) | Error: Fixed by adding `/* jshint esversion: 11 */` to top of file  |
-| questions.js | ![Main Javascript File](documentation/TESTING-files/validation/jshint-errors-second.png) | Error: Fixed by adding semicolons |
-| quiz.js | ![Main Javascript File](documentation/TESTING-files/validation/jshint-errors-third.png) | Error: Fixed by adjusting functions |
-| stripe_elements.js | ![Main Javascript File](documentation/TESTING-files/validation/jshint-fixed.png) | Pass: Errors due to unused variables from external files |
-| quiz.js | ![Animal Questions](documentation/TESTING-files/validation/jshint-animal.png) | Pass: Errors due to unused variables from external files |
-| quiz.js | ![Landmark Questions](documentation/TESTING-files/validation/jshint-landmarks.png) | Pass: Errors due to unused variables from external files |
+| script.js | ![Main Javascript File](documentation/TESTING-files/validation/jshint-errors-second.png) | Error: Fixed by adding semicolons |
+| script.js | ![Main Javascript File](documentation/TESTING-files/validation/jshint-errors-third.png) | Error: Fixed by adjusting functions |
+| script.js | ![Main Javascript File](documentation/TESTING-files/validation/jshint-fixed.png) | Pass: Errors due to unused variables from external files |
+| animals.js | ![Animal Questions](documentation/TESTING-files/validation/jshint-animal.png) | Pass: Errors due to unused variables from external files |
+| landmarks.js | ![Landmark Questions](documentation/TESTING-files/validation/jshint-landmarks.png) | Pass: Errors due to unused variables from external files |
 
 ## Manual Testing
 
