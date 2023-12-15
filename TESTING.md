@@ -133,3 +133,22 @@ Defensive programming was manually tested with the below user acceptance testing
 | Replay Button | Replay game that was being played | Click replay button | Current game restarted | ![Replay Button](documentation/end-buttons.png) |
 | Home Button | Return to welcome section | Click home button | Welcome section displayed | ![Home Button](documentation/end-buttons.png) |
 
+## User Story Testing
+
+| User Story | Screenshot |
+| --- | --- |
+| As a new site user, I would like to play a game, so that I can relax. | ![Game Image](documentation/correct.png) |
+| As a new site user, I would like to see vibrant colours, so that I can feel positive emotions while playing. | ![Vibrant Background And Buttons](documentation/game-box.png) |
+| As a new site user, I would like to easily navigate the site, so that I can easily play the game I chose. | ![Game Navigation](documentation/control-buttons.png) |
+| As a new site user, I would like to see the rules, so that I can understand how the game works. | ![How To](documentation/how-to.png) |
+| As a new site user, I would like to challenge myself, so that I can feel productive. | ![Incorrect Answer](documentation/incorrect.png) |
+| As a new site user, I would like to have different game types, so that I can won't finish the game too fast. | ![Game Selection](documentation/game-selection.png) |
+| As a new site user, I would like to see if my answer is correct or not, so that I can clearly see how I am doing. | ![Correct Answer](documentation/correct.png) |
+| As a returning site user, I would like to easily navigate the site, so that I can replay the game or select a different one. | ![Game End Buttons](documentation/end-buttons.png) |
+| As a returning site user, I would like to challenge myself, so that I can feel productive. | ![Incorrect Answer](documentation/incorrect.png) |
+| As a returning site user, I would like to see my score, so that I can see if im improving. | ![Final Score](documentation/final-score.png) |
+| As a returning site user, I would like to have alot of questions, so that I can replay the game without too many repeated questions. | ![Question Array Preview](documentation/questions-preview.png) |
+| As a site administrator, I should be able to provide a fun and vibrant game, so that I can make the users have a happy experience. | ![Vibrant Background And Buttons](documentation/game-box.png) |
+| As a site administrator, I should be able to provide mulitple games, so that I can encourage the user to return to play again. | ![Game Selection](documentation/game-selection.png) |
+| As a site administrator, I should be able to provide more questions than are asked, so that I can get the user to return to play again. | ![Question Array Preview](documentation/questions-preview.png) |
+
