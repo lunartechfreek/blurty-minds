@@ -152,3 +152,48 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a site administrator, I should be able to provide mulitple games, so that I can encourage the user to return to play again. | ![Game Selection](documentation/game-selection.png) |
 | As a site administrator, I should be able to provide more questions than are asked, so that I can get the user to return to play again. | ![Question Array Preview](documentation/questions-preview.png) |
 
+## Bugs
+
+I encountered many bugs throughout my project, the most notable ones are as follows:
+
+- Hide class not working as expected
+
+    ![Hide Bug](documentation/TESTING-files/bug-hide.png)
+
+    - To fix this, I moved my hide class to the bottom of my `.css` file.
+
+- Button font colour displaying as blue.
+
+    ![Font Colour Bug](documentation/TESTING-files/bug-colour.png)
+
+    - To fix this, I added a specific font colour to my `.btn` class.
+
+- How To section displaying incorrectly.
+
+    ![How To Bug](documentation/TESTING-files/bug-how-to.png)
+
+    - To fix this, I added a `min-height` declartion to the stylesheet.
+
+- Image blur distorting area outside of the image.
+
+    ![Image Blur Bug](documentation/TESTING-files/bug-image-blur.png)
+
+    - To fix this, I added the property `overflow: hidden;` to my stylesheet.
+
+- Displayed the end text of the previous question for one second after displaying the new question.
+
+    ![Timer Bug](documentation/TESTING-files/bug-timer.png)
+
+    - To fix this, I added clear interval and the start countdown function to reset, I also added start countdown function to the run game function.
+
+- Correct answer displaying incorrect class on button.
+
+    ![Wrong Answer Bug](documentation/TESTING-files/bug-wrong-answer.png)
+
+    - To fix this, I added `resetButtons()` to the check answer function.
+
+- Timer trying to run multiple times after clicking replay button at game end.
+
+    ![Replay Bug](documentation/TESTING-files/bug-reset.png)
+
+    - To fix this, I updated the restartButton event listener.
