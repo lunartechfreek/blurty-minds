@@ -93,3 +93,43 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Microsoft Surface Duo | ![Microsoft Surface Duo](documentation/TESTING-files/microsoft-surface-duo.png) | Works as expected | Chrome DevTools test |
 | Microsoft Surface Pro 7 | ![Microsoft Surface Pro 7](documentation/TESTING-files/microsoft-surface-pro-7.png) | Works as expected | Chrome DevTools test |
 
+## Lighthouse Audit
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues. The results were as follows:
+
+| Test | Home | Notes |
+| --- | --- | --- |
+| Mobile | ![Mobile Lighthouse](documentation/TESTING-files/lighthouse-mobile.png) | No error messages |
+| Desktop | ![Desktop Lighthouse](documentation/TESTING-files/lighthouse-desktop.png) | No error messages |
+
+## Defensive Programming
+
+Defensive programming was manually tested with the below user acceptance testing:
+
+| Feature | Expectation | Test | Result | Screenshot |
+| --- | --- | --- | --- | --- |
+| Game Box | Box to display on page load | Load page | Box displayed | ![Game Box](documentation/game-box.png) |
+| Logo | Direct to home | Click logo | Directed to home page | ![Logo](documentation/logo.png) |
+| Animals Control Button | Display animals questions | Click button | Animals Game Loaded | ![Animals Control Button](documentation/game-selection.png) |
+| Landmarks Control Button | Display landmarks questions | Click button | Landmarks Game Loaded | ![Landmarks Control Button](documentation/game-selection.png) |
+| How To Control Button | Display how to | Click button | How to Loaded | ![How To Control Button](documentation/control-buttons.png) |
+| Hover | Hover styles to be applied | Hover mouse over button | Hover styles applied | ![Hover](documentation/hover.png) |
+| Dynamic Game Title | Title to dynamically display current game type | Click relevent game button | Title of game displayed | ![Dynamic Game Title](documentation/game-type-animals.png) |
+| Blurred Image | Image to reduce in blur every second | Run game | Image blur reduces on timer | ![Blurred Image](documentation/blurry-img.png) |
+| Show Full Image | Image to have blur removed when correct answer selected | Answer question before timer gets to 0 | Blur removed | ![Show Full Image](documentation/reveal-image.png) |
+| Timer | Timer to count back from 10 seconds on each question | Run questions | Timer functions correctly | ![Timer](documentation/timer.png) |
+| Timer Font Colour Change | Timer font to change to red when there is less than 3 seconds remaining | Let timer run down past 3 seconds | Text changes colour | ![Timer Font Colour Change](documentation/red-timer.png) |
+| Points Scored Alert | Text to change from timer to a message displaying the amount of points scored when the correct answer is selected | Select correct answer | Points scored displayed | ![Points Scored Alert](documentation/question-score.png) |
+| Answer Buttons | Button to display as correct or incorrect | Select answer | Button click returned as correct or incorrect | ![Answer Buttons](documentation/answer-buttons.png) |
+| Correct Colour | Answer button to change to green when answer is correct | Click correct answer | Button displayed green | ![Correct Colour](documentation/correct-button.png) |
+| Incorrect Colour | Answer button to change to red when answer is incorrect | Click incorrect answer | Button displayed red | ![Incorrect Colour](documentation/incorrect-button.png) |
+| Correct Other Features | Border to turn green and button to pulse grow when answer is correct | Click correct answer | Border displayed as green and button grew | ![Correct Other Features](documentation/correct.png) |
+| Incorrect Other Features | Border to turn red and button to buzz when answer is incorrect | Click incorrect answer |  | ![Incorrect Other Features](documentation/incorrect.png) |
+| Restart Button | Button to take you back to the game selection page | Click restart button | Returned to game selection | ![Restart Button](documentation/game-restart.png) |
+| Total Score | Total score to be displayed at the bottom | Play the game to build a score | Points added and displayed in total score | ![Total Score](documentation/total-score.png) |
+| Next Button | To be displayed only when answer is correct and take the user to the next question | Select correct answer | Next button displayed and next question displayed when clicked | ![Next Button](documentation/next-button.png) |
+| Game End | To be displayed when the user has got to the end of the game | Play the game until the end | Game end displayed | ![Game End](documentation/game-end.png) |
+| Final Game Score | Game score to be displayed on game end | Finish game | Score displayed as final score | ![Final Game Score](documentation/final-score.png) |
+| Replay Button | Replay game that was being played | Click replay button | Current game restarted | ![Replay Button](documentation/end-buttons.png) |
+| Home Button | Return to welcome section | Click home button | Welcome section displayed | ![Home Button](documentation/end-buttons.png) |
+
