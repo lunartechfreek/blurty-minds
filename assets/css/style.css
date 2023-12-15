@@ -1,3 +1,4 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Gloria+Hallelujah&family=PT+Sans+Caption:wght@400;700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -80,6 +81,7 @@ h1 {
     box-shadow: 0 0 30px 8px #007193;
 }
 
+/* Welcome */
 .welcome {
     display: flex;
     flex-direction: column;
@@ -111,6 +113,7 @@ h1 {
     font-size: 1.3rem;
 }
 
+/* How To */
 .how-to {
     padding: 10px;
     height: 100%;
@@ -136,6 +139,7 @@ h1 {
     margin-bottom: 10px;
 }
 
+/* Question Area */
 .question-box {
     height: 90%;
     display: flex;
@@ -226,6 +230,7 @@ img {
     padding: 7px 10px;
 }
 
+/* Game End */
 .game-end {
     display: flex;
     flex-direction: column;
@@ -256,14 +261,17 @@ img {
     padding: 7px;
 }
 
+/* Correct Class */
 .correct {
     background-color: #0AE240;
 }
 
+/* Incorrect Class */
 .incorrect {
     background-color: #FF3030;
 }
 
+/* Blur Effect */
 #img-blur {
     filter: blur(20px);
     /* Makes smooth transition between blur */
@@ -367,6 +375,7 @@ img {
 
 /* Media query: mobile screens (415px and under) */
 @media screen and (max-width: 415px) {
+    /* Header */
     h1 {
         font-size: 2.3rem;
     }
@@ -386,11 +395,13 @@ img {
 
 /* Media query: mobile screens (389px and under) */
 @media screen and (max-width: 389px) {
+    /* Header */
     h1 {
         font-size: 2rem;
         margin-bottom: 10px;
     }
 
+    /* Game Box */
     #game-box {
         height: 80vh;
     }
@@ -419,6 +430,7 @@ img {
     font-size: 1.2rem;
     }
 
+    /* Score Area */
    .score-area {
     margin-bottom: 10px;
    }
@@ -426,6 +438,7 @@ img {
 
 /* Media query: mobile screens (350px and under) */
 @media screen and (max-width: 350px) {
+    /* Header */
     h1 {
         font-size: 2.05rem;
     }
@@ -435,6 +448,7 @@ img {
         width: 256px;
     }
 
+    /* Game Box */
     #game-image {
         height: 164px;
         width: 246px;
@@ -486,6 +500,7 @@ img {
         margin-bottom: 10px;
     }
 
+    /* Question Area */
     .question-box > p {
         font-size: 1rem;
     }
@@ -499,10 +514,12 @@ img {
         font-size: 1.05rem;
     }
 
+    /* Score Area */
     .score-area > p {
         font-size: 1.1rem;
     }
 
+    /* Game End */
     .game-end > h2 {
         font-size: 2.5rem;
     }
@@ -515,10 +532,12 @@ img {
 
 /* Media query: small tablets and larger (535px and up) */
 @media screen and (min-width: 535px) {
+    /* Header */
     h1 {
         margin-bottom: 10px;
     }
 
+    /* Game Box */
     #game-box {
         height: 80vh;
         max-width: 550px;
@@ -549,6 +568,7 @@ img {
         padding: 5px;
     }
 
+    /* Score Area */
     .score-area {
         width: 80%;
         margin-bottom: 10px;
@@ -565,6 +585,7 @@ img {
 
 /* Media query: tablets and larger (700px and up) */
 @media screen and (min-width: 700px) {
+    /* Game Box */
     #game-box {
         height: 80vh;
         max-width: 655px;
@@ -597,6 +618,7 @@ img {
         margin-bottom: 40px;
     }
 
+    /* Question Area */
     #game-type {
         font-size: 2rem;
     }
@@ -628,6 +650,7 @@ img {
         font-size: 1.6rem;
     }
 
+    /* Score Area */
     .score-area > p {
         font-size: 2.1rem;
     }
@@ -659,6 +682,7 @@ img {
         height: 75px;
     }
 
+    /* Game Box */
     #game-box {
         height: 82vh;
         min-width: 700px;
@@ -667,6 +691,7 @@ img {
         max-width: 800px;
     }
 
+    /* Question Area */
     #game-type {
         font-size: 2.2rem;
     }
@@ -696,6 +721,7 @@ img {
         font-size: 1.9rem;
     }
 
+    /* Score Area */
     .score-area {
         margin-bottom: 22px;
     }
@@ -722,6 +748,7 @@ img {
 
 /* Media query: Laptops and larger (992px and up) */
 @media screen and (min-width: 992px) {
+    /* Header */
     h1 {
         font-size: 2.9rem;
         margin-right: 20px;
@@ -758,12 +785,14 @@ img {
         margin-bottom: 20px;
     }
 
+    /* Game Box */
     #game-box {
         width: 85%;
         max-width: 900px;
         min-height: 500px;
     }
 
+    /* Question Area */
     #game-type {
         font-size: 1.5rem;
     }
@@ -793,6 +822,7 @@ img {
         max-width: 300px;
     }
 
+    /* Score Area */
     .score-area > p {
         font-size: 1.4rem;
     }
@@ -815,6 +845,7 @@ img {
         margin-bottom: 1.5%;
     }
 
+    /* Hover Styles */
     .ctrl-btn:hover, #home-btn:hover, #next-btn:hover, #return-home:hover, #restart-btn:hover {
         background-color: #4ffbdf;
         box-shadow: 0 0 3px 1.5px #00D2FC;
@@ -827,12 +858,14 @@ img {
 
 /* Media query: Desktops and larger (1200px and up) */
 @media screen and (min-width: 1200px) {
+    /* Game Box */
     #game-box {
         max-width: 1000px;
         min-height: 600px;
         margin-bottom: 50px;
     }
 
+    /* Question Area */
     #image-border {
         height: 335px;
         width: 495px;
@@ -858,6 +891,7 @@ img {
     pointer-events: none;
 }
 
+/* Replay Button */
 .replay-btn {
     margin-bottom: 30px;
     font-size: 2rem;
