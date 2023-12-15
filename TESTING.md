@@ -172,7 +172,7 @@ I encountered many bugs throughout my project, the most notable ones are as foll
 
     ![How To Bug](documentation/TESTING-files/bug-how-to.png)
 
-    - To fix this, I added a `min-height` declartion to the stylesheet.
+    - To fix this, I added a `min-height` declartion to game box on the stylesheet.
 
 - Image blur distorting area outside of the image.
 
